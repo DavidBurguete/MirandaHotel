@@ -1,0 +1,64 @@
+@import 'burger_menu';
+@import 'nav';
+
+@mixin header_buttons{
+    background-color: transparent;
+    border: none;
+    margin-block: 23px;
+    margin-right: 20px;
+    line-height: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    box-shadow: 0px 3px 6px 0px #0000004A;
+    z-index: 5;
+}
+
+.logo{
+    display: flex;
+    align-self: center;
+    font-family: "Archivo";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    color: #111111;
+
+    h1{
+        align-self: center;
+        order: 2;
+        font-size: 12px;
+        width: 70px;
+        margin: 0 14px;
+
+        span{
+            font-weight: 400;
+        }
+    }
+
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+        text-align: center;
+        box-shadow: 0px 14px 24px 0px #8B8B8B40;
+    }
+}
+
+.header_buttons{
+    margin-left: auto;
+}
+
+.header_buttons--user{
+    @include header_buttons;
+}
+
+.header_buttons--search{
+    @include header_buttons;
+}

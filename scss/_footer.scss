@@ -1,0 +1,141 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/footer\ background.png");
+    background-color: rgba(255, 255, 255, 0.98);
+    background-blend-mode: lighten;
+    padding: 20px;
+}
+
+.footer__logo{
+    display: flex;
+    margin-bottom: 50px;
+    font-family: "Archivo";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    color: #111111;
+
+    h1{
+        align-self: center;
+        order: 2;
+        font-size: 26px;
+        width: 70px;
+        margin: 0 28px;
+
+        span{
+            font-weight: 400;
+        }
+    }
+
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        background-color: #BEAD8E;
+        box-shadow: 0px 14px 24px 0px #8B8B8B26;
+    }
+}
+
+.footer__description{
+    color: #777777;
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.footer__social_media{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.footer__social_media__link{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer__social_media__link--twitter{
+    background-color: #BEAD8E;
+}
+
+//.footer__services{}
+
+.footer__services--title, .footer__contact--title{
+    font-family: "Old Standard TT";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.footer__services__types{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    color: #777777;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+
+.footer__contact{
+    width: 60%;
+}
+
+.footer__contact__contact_card{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.footer__contact__cc__text{
+    margin-left: 20px;
+    width: 100%;
+}
+
+.footer__contact__cc__text--name{
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.footer__contact__cc__text--type{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #777777;
+}
+
+.footer__legal{
+    background-color: #F8F8F8;
+    width: 100%;
+    padding-block: 7px;
+}
+
+.footer__legal__text{
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.48px;
+    color: #222222;
+    padding: 12px 20px;
+}
