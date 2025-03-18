@@ -10,3 +10,52 @@ html, * {
 body { 
     min-width: 320px 
 }
+
+button, input[type=submit]{
+    cursor: pointer;
+}
+
+.main__header{
+    position: relative;
+    background-color: #333333;
+    color: white;
+}
+
+.main__header__text{
+    padding: 75px 20px;
+}
+
+.main__header__text--luxury{
+    font-family: "Archivo";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+.main__header__text--details{
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+}
+
+.breadcrumbs{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    padding: 16px 30px;
+    background-color: white;
+    color: #222222;
+    font-family: "Archivo";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.48px;
+
+    span{
+        color: #BEAD8E;
+    }
+}

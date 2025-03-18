@@ -1,0 +1,119 @@
+@import 'styles';
+
+.contact{
+    padding: 24px 32px;
+}
+
+.contact__card{
+    position: relative;
+    display: flex;
+    padding-block: 52px;
+
+    img{
+        align-self: flex-start;
+    }
+}
+
+.contact__card__text{
+    position: absolute;
+    left: 67px;
+    width: 60%;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #777777;
+}
+
+.contact__card__text>:nth-child(n){
+    margin-bottom: 8px;
+}
+
+.contact__card__text>:first-child{
+    margin-bottom: 20px;
+    font-family: "Old Standard TT";
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.contact__card__text__number{
+    margin-left: auto;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 100%;
+    letter-spacing: -6px;
+    color: #F8F8F8;
+}
+
+iframe{
+    padding: 20px;
+    max-width: 100%;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px;
+
+    input[type=text], textarea{
+        margin-block: 8px;
+        padding: 25px 20px 25px 52px;
+        width: 100%;
+        border: 0;
+        outline: none;
+        background-color: #F8F8F8;
+    }
+
+    @mixin field_image{
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 20px;
+    }
+
+    #name{
+        @include field_image;
+        background-image: url("../img/user_form.svg");
+    }
+
+    #phone{
+        @include field_image;
+        background-image: url("../img/telephone.svg");
+    }
+
+    #email{
+        @include field_image;
+        background-image: url("../img/email.svg");
+    }
+
+    #subject{
+        @include field_image;
+        background-image: url("../img/subject.svg");
+    }
+
+    #message{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 26px;
+        background-position-x: 20px;
+        background-image: url("../img/message.svg");
+        resize: none;
+    }
+
+    input[type=submit]{
+        width: 70%;
+        margin: 60px auto;
+        padding: 20px;
+        border: none;
+        background-color: #BEAD8E;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
