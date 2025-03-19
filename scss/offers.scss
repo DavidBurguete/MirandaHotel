@@ -1,0 +1,149 @@
+@import 'styles';
+@import 'rooms';
+
+.offer__card__room{
+    position: relative;
+    padding-top: 48px;
+    padding-inline: 20px;
+}
+
+.offer__card__room--img{
+    width: 100%;
+}
+
+.offer__card__room--price{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+
+    *{
+        padding-bottom: 15px;
+        padding-right: 10px;
+        font-family: "Archivo";
+        font-weight: 700;
+        line-height: 100%;
+        text-align: right;
+    }
+}
+
+.offer__card__room--price--former{
+    font-size: 23px;
+    text-decoration-line: line-through;
+    color: $miranda_main_color;
+
+    span{
+        display: inline-block;
+        padding-bottom: 0;
+        font-size: 11px;
+    }
+}
+
+.offer__card__room--price--actual{
+    font-size: 30px;
+    color: #DE5777;
+
+    span{
+        font-size: 12px;
+    }
+}
+
+.offer__card__type{
+    padding: 10px 20px;
+    font-family: "Archivo";
+    font-weight: 15px;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $miranda_gray;
+}
+
+.offer__card__name{
+    padding: 10px 20px;
+    width: 85%;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.44px;
+    color: $miranda_black;
+}
+
+.offer__card__description{
+    margin: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $miranda_gray;
+}
+
+.offer__card__amenities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    h3{
+        width: 100%;
+        margin-bottom: 40px;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        color: $miranda_black;
+    }
+}
+
+.offer__card__amenities__amenitie{
+    display: flex;
+    width: 50%;
+    padding-block: 10px;
+
+    img{
+        width: 16px;
+    }
+
+    p{
+        padding: 4px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 100%;
+        color: $miranda_gray;
+    }
+}
+
+.offer__card__book{
+    @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 14px, $l_spacing: 2.8px);
+    margin-inline: 20px;
+    margin-bottom: 40px;
+}
+
+.offer__popular_rooms{
+    position: relative;
+    background-color: $miranda_black;
+}
+
+.offer__popular_rooms--list{
+    padding-top: 48px;
+    font-family: "Archivo";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $miranda_main_color;
+}
+
+.offer__popular_rooms--room{
+    margin: 15px;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: white;
+}

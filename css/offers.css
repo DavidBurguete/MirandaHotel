@@ -53,7 +53,7 @@ nav {
   transform-origin: top;
   background-color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  z-index: 1;
+  z-index: 12;
 }
 nav.deploy_nav--active {
   transform: scaleY(1);
@@ -94,7 +94,7 @@ header {
   top: 0;
   background-color: white;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
-  z-index: 5;
+  z-index: 99;
 }
 
 .logo {
@@ -399,7 +399,7 @@ nav {
   transform-origin: top;
   background-color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  z-index: 1;
+  z-index: 12;
 }
 nav.deploy_nav--active {
   transform: scaleY(1);
@@ -440,7 +440,7 @@ header {
   top: 0;
   background-color: white;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
-  z-index: 5;
+  z-index: 99;
 }
 
 .logo {
@@ -699,6 +699,7 @@ button, input[type=submit] {
 
 .room__card__bottom {
   position: relative;
+  background-color: white;
 }
 
 .room__card__icons {
@@ -736,7 +737,8 @@ button, input[type=submit] {
 .room__card__pricing {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px auto;
+  margin: auto;
+  margin-block: 10px 30px;
   width: 70%;
 }
 
@@ -755,100 +757,73 @@ button, input[type=submit] {
   color: #BDBDBD;
 }
 
-.main__info {
-  margin: 48px 20px;
+.offer__card__room {
+  position: relative;
+  padding-top: 48px;
+  padding-inline: 20px;
 }
-.main__info h3 {
+
+.offer__card__room--img {
+  width: 100%;
+}
+
+.offer__card__room--price {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.offer__card__room--price * {
+  padding-bottom: 15px;
+  padding-right: 10px;
   font-family: "Archivo";
   font-weight: 700;
+  line-height: 100%;
+  text-align: right;
+}
+
+.offer__card__room--price--former {
+  font-size: 23px;
+  text-decoration-line: line-through;
+  color: #BEAD8E;
+}
+.offer__card__room--price--former span {
+  display: inline-block;
+  padding-bottom: 0;
+  font-size: 11px;
+}
+
+.offer__card__room--price--actual {
+  font-size: 30px;
+  color: #DE5777;
+}
+.offer__card__room--price--actual span {
+  font-size: 12px;
+}
+
+.offer__card__type {
+  padding: 10px 20px;
+  font-family: "Archivo";
+  font-weight: 15px;
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 2.8px;
   text-transform: uppercase;
   color: #777777;
 }
-.main__info p {
-  margin-block: 10px;
+
+.offer__card__name {
+  padding: 10px 20px;
+  width: 85%;
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 40px;
   letter-spacing: -1.44px;
   color: #222222;
 }
-.main__info h4 {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 43px;
-  color: #BEAD8E;
-}
-.main__info h4 span {
-  font-size: 13px;
-}
-.main__info img {
-  width: 100%;
-}
 
-.main__availability {
-  margin: 40px;
-}
-.main__availability form {
-  display: flex;
-  flex-direction: column;
-}
-.main__availability form p {
-  text-align: center;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: -0.54px;
-  color: #222222;
-}
-.main__availability form label {
-  display: flex;
-  flex-direction: column;
-  margin-block: 20px;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  color: #222222;
-}
-.main__availability form label input {
-  margin-block: 8px;
-  padding: 25px 20px;
-  width: 100%;
-  border: 0;
-  outline: none;
-  background-color: #F8F8F8;
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  color: #777777;
-}
-.main__availability form label input::-webkit-calendar-picker-indicator {
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-}
-.main__availability form input[type=submit] {
-  width: 100%;
-  padding: 20px;
-  border: none;
-  background-color: #BEAD8E;
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: white;
-}
-
-.main__description {
-  margin: 40px 20px;
+.offer__card__description {
+  margin: 20px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -856,13 +831,13 @@ button, input[type=submit] {
   color: #777777;
 }
 
-.main__amenities {
+.offer__card__amenities {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px;
 }
-.main__amenities h3 {
+.offer__card__amenities h3 {
   width: 100%;
   margin-bottom: 40px;
   font-family: "Old Standard TT";
@@ -872,15 +847,15 @@ button, input[type=submit] {
   color: #222222;
 }
 
-.main__amenities__amenitie {
+.offer__card__amenities__amenitie {
   display: flex;
   width: 50%;
   padding-block: 10px;
 }
-.main__amenities__amenitie img {
+.offer__card__amenities__amenitie img {
   width: 16px;
 }
-.main__amenities__amenitie p {
+.offer__card__amenities__amenitie p {
   padding: 4px;
   font-family: "Roboto";
   font-weight: 500;
@@ -889,79 +864,48 @@ button, input[type=submit] {
   color: #777777;
 }
 
-.main__founder {
-  margin: 60px 25px;
-  text-align: center;
-}
-
-.main__founder__images {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 40%;
-}
-.main__founder__images * {
-  border-radius: 999px;
-}
-
-.main__founder__founder {
-  width: 100%;
-}
-
-.main__founder__verified {
-  position: absolute;
-  right: 0;
-}
-
-.main__founder__name {
-  margin-top: 20px;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.9px;
-  color: #222222;
-}
-
-.main__founder__position {
-  padding: 15px;
+.offer__card__book {
+  width: 70%;
+  padding: 20px;
+  border: none;
+  background-color: #BEAD8E;
   font-family: "Archivo";
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 2.8px;
   text-transform: uppercase;
+  color: white;
+  margin-inline: 20px;
+  margin-bottom: 40px;
+}
+
+.offer__popular_rooms {
+  position: relative;
+  background-color: #222222;
+}
+
+.offer__popular_rooms--list {
+  padding-top: 48px;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  text-align: center;
   color: #BEAD8E;
 }
 
-.main__founder__descrpition {
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #777777;
-}
-
-.main__cancellation {
-  margin: 20px;
-}
-
-.main__cancellation__title {
+.offer__popular_rooms--room {
+  margin: 15px;
   font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  color: #222222;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  text-align: center;
+  color: white;
 }
 
-.main__cancellation__description {
-  margin-block: 45px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #777777;
-}
-
-/*# sourceMappingURL=room_details.css.map */
+/*# sourceMappingURL=offers.css.map */

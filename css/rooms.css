@@ -53,7 +53,7 @@ nav {
   transform-origin: top;
   background-color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
-  z-index: 1;
+  z-index: 12;
 }
 nav.deploy_nav--active {
   transform: scaleY(1);
@@ -94,7 +94,7 @@ header {
   top: 0;
   background-color: white;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
-  z-index: 5;
+  z-index: 99;
 }
 
 .logo {
@@ -186,12 +186,12 @@ header {
   font-size: 40px;
   text-align: center;
   color: white;
-  background-color: $miranda_main_color;
+  background-color: #BEAD8E;
   box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.1490196078);
 }
 
 .footer__description {
-  color: $miranda_gray;
+  color: #777777;
   font-family: "Archivo";
   font-weight: 400;
   font-size: 16px;
@@ -215,7 +215,7 @@ header {
 }
 
 .footer__social_media__link--twitter {
-  background-color: $miranda_main_color;
+  background-color: #BEAD8E;
 }
 
 .footer__services--title, .footer__contact--title {
@@ -231,7 +231,7 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   height: 300px;
-  color: $miranda_gray;
+  color: #777777;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
@@ -258,7 +258,7 @@ header {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: $miranda_black;
+  color: #222222;
 }
 
 .footer__contact__cc__text--type {
@@ -266,7 +266,7 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: $miranda_gray;
+  color: #777777;
 }
 
 .footer__legal {
@@ -281,7 +281,7 @@ header {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: -0.48px;
-  color: $miranda_black;
+  color: #222222;
   padding: 12px 20px;
 }
 
@@ -333,7 +333,7 @@ button, input[type=submit] {
   right: 20px;
   padding: 16px 30px;
   background-color: white;
-  color: $miranda_black;
+  color: #222222;
   font-family: "Archivo";
   font-weight: 700;
   font-size: 16px;
@@ -341,7 +341,7 @@ button, input[type=submit] {
   letter-spacing: -0.48px;
 }
 .breadcrumbs span {
-  color: $miranda_main_color;
+  color: #BEAD8E;
 }
 
 .room__card {
@@ -353,6 +353,7 @@ button, input[type=submit] {
 
 .room__card__bottom {
   position: relative;
+  background-color: white;
 }
 
 .room__card__icons {
@@ -375,7 +376,7 @@ button, input[type=submit] {
   font-size: 24px;
   line-height: 24px;
   letter-spacing: -0.72px;
-  color: $miranda_black;
+  color: #222222;
 }
 
 .room__card__description {
@@ -384,13 +385,14 @@ button, input[type=submit] {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: $miranda_gray;
+  color: #777777;
 }
 
 .room__card__pricing {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px auto;
+  margin: auto;
+  margin-block: 10px 30px;
   width: 70%;
 }
 
@@ -402,7 +404,7 @@ button, input[type=submit] {
 }
 
 .room__card__price {
-  color: $miranda_main_color;
+  color: #BEAD8E;
 }
 
 .room__card__book {

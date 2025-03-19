@@ -97,7 +97,7 @@ form{
     }
 
     input[type=submit]{
-        @include miranda_button($width: 70%, $f_weight: 700, $f_size: 16px, $l_spacing: 3.2px);
+        @include miranda_button($width: 70%, $f_family: "Roboto", $f_weight: 700, $f_size: 16px, $l_spacing: 3.2px);
         margin: 60px auto;
     }
 }

@@ -7,12 +7,12 @@ $miranda_black: #222222;
     border: none;
 }
 
-@mixin miranda_button($width, $f_weight, $f_size, $l_spacing){
+@mixin miranda_button($width, $f_family, $f_weight, $f_size, $l_spacing){
     width: $width;
     padding: 20px;
     border: none;
     background-color: $miranda_main_color;
-    font-family: "Roboto";
+    font-family: $f_family;
     font-weight: $f_weight;
     font-size: $f_size;
     line-height: 100%;

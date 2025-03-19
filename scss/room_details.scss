@@ -89,7 +89,7 @@
         }
 
         input[type=submit]{
-            @include miranda_button($width: 100%, $f_weight: 400, $f_size: 14px, $l_spacing: 2.8px);
+            @include miranda_button($width: 100%, $f_family: "Archivo", $f_weight: 400, $f_size: 14px, $l_spacing: 2.8px);
         }
     }
 }
