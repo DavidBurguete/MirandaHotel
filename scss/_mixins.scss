@@ -1,0 +1,28 @@
+$miranda_main_color: #BEAD8E;
+$miranda_gray: #777777;
+$miranda_black: #222222;
+
+@mixin button{
+    background-color: transparent;
+    border: none;
+}
+
+@mixin miranda_button($width, $f_weight, $f_size, $l_spacing){
+    width: $width;
+    padding: 20px;
+    border: none;
+    background-color: $miranda_main_color;
+    font-family: "Roboto";
+    font-weight: $f_weight;
+    font-size: $f_size;
+    line-height: 100%;
+    letter-spacing: $l_spacing;
+    text-transform: uppercase;
+    color: white;
+}
+
+@mixin field_image{
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}

@@ -1,0 +1,216 @@
+@import 'styles';
+@import 'rooms';
+
+.main__info{
+    margin: 48px 20px;
+
+    h3{
+        font-family: "Archivo";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        color: $miranda_gray;
+    }
+
+    p{
+        margin-block: 10px;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.44px;
+        color: $miranda_black;
+    }
+
+    h4{
+        font-family: "Archivo";
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        color: $miranda_main_color;
+
+        span{
+            font-size: 13px;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+.main__availability{
+    margin: 40px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            text-align: center;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: -0.54px;
+            color: $miranda_black;
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            margin-block: 20px;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 100%;
+            color: $miranda_black;
+
+            input{
+                margin-block: 8px;
+                padding: 25px 20px;
+                width: 100%;
+                border: 0;
+                outline: none;
+                background-color: #F8F8F8;
+                font-family: "Archivo";
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                color: $miranda_gray;
+            }
+
+            input::-webkit-calendar-picker-indicator {
+                background-image: url('../img/calendar.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        input[type=submit]{
+            @include miranda_button($width: 100%, $f_weight: 400, $f_size: 14px, $l_spacing: 2.8px);
+        }
+    }
+}
+
+.main__description{
+    margin: 40px 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $miranda_gray;
+}
+
+.main__amenities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    h3{
+        width: 100%;
+        margin-bottom: 40px;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        color: $miranda_black;
+    }
+}
+
+.main__amenities__amenitie{
+    display: flex;
+    width: 50%;
+    padding-block: 10px;
+
+    img{
+        width: 16px;
+    }
+
+    p{
+        padding: 4px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 100%;
+        color: $miranda_gray;
+    }
+}
+
+.main__founder{
+    margin: 60px 25px;
+    text-align: center;
+}
+
+.main__founder__images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+
+    *{
+        border-radius: 999px;
+    }
+}
+
+.main__founder__founder{
+    width: 100%;
+}
+
+.main__founder__verified{
+    position: absolute;
+    right: 0;
+}
+
+.main__founder__name{
+    margin-top: 20px;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+    color: $miranda_black;
+}
+
+.main__founder__position{
+    padding: 15px;
+    font-family: "Archivo";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $miranda_main_color;
+}
+
+.main__founder__descrpition{
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $miranda_gray;
+}
+
+.main__cancellation{
+    margin: 20px;
+}
+
+.main__cancellation__title{
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: $miranda_black;
+}
+
+.main__cancellation__description{
+    margin-block: 45px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $miranda_gray;
+}

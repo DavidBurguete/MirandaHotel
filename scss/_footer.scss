@@ -38,13 +38,13 @@
         font-size: 40px;
         text-align: center;
         color: white;
-        background-color: #BEAD8E;
+        background-color: $miranda_main_color;
         box-shadow: 0px 14px 24px 0px #8B8B8B26;
     }
 }
 
 .footer__description{
-    color: #777777;
+    color: $miranda_gray;
     font-family: "Archivo";
     font-weight: 400;
     font-size: 16px;
@@ -68,7 +68,7 @@
 }
 
 .footer__social_media__link--twitter{
-    background-color: #BEAD8E;
+    background-color: $miranda_main_color;
 }
 
 //.footer__services{}
@@ -86,7 +86,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 300px;
-    color: #777777;
+    color: $miranda_gray;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
@@ -113,7 +113,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #222222;
+    color: $miranda_black;
 }
 
 .footer__contact__cc__text--type{
@@ -121,7 +121,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: #777777;
+    color: $miranda_gray;
 }
 
 .footer__legal{
@@ -136,6 +136,6 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: -0.48px;
-    color: #222222;
+    color: $miranda_black;
     padding: 12px 20px;
 }

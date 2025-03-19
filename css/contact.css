@@ -310,6 +310,7 @@ button, input[type=submit] {
 }
 
 .main__header__text--luxury {
+  margin-bottom: 20px;
   font-family: "Archivo";
   font-weight: 700;
   font-size: 13px;
@@ -442,7 +443,6 @@ form #message {
 }
 form input[type=submit] {
   width: 70%;
-  margin: 60px auto;
   padding: 20px;
   border: none;
   background-color: #BEAD8E;
@@ -453,6 +453,7 @@ form input[type=submit] {
   letter-spacing: 3.2px;
   text-transform: uppercase;
   color: white;
+  margin: 60px auto;
 }
 
 /*# sourceMappingURL=contact.css.map */

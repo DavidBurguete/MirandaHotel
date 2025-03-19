@@ -22,7 +22,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: #777777;
+    color: $miranda_gray;
 }
 
 .contact__card__text>:nth-child(n){
@@ -34,7 +34,7 @@
     font-family: "Old Standard TT";
     font-size: 20px;
     line-height: 24px;
-    color: #222222;
+    color: $miranda_black;
 }
 
 .contact__card__text__number{
@@ -67,12 +67,6 @@ form{
         background-color: #F8F8F8;
     }
 
-    @mixin field_image{
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: 20px;
-    }
-
     #name{
         @include field_image;
         background-image: url("../img/user_form.svg");
@@ -103,17 +97,7 @@ form{
     }
 
     input[type=submit]{
-        width: 70%;
+        @include miranda_button($width: 70%, $f_weight: 700, $f_size: 16px, $l_spacing: 3.2px);
         margin: 60px auto;
-        padding: 20px;
-        border: none;
-        background-color: #BEAD8E;
-        font-family: "Roboto";
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 100%;
-        letter-spacing: 3.2px;
-        text-transform: uppercase;
-        color: white;
     }
 }

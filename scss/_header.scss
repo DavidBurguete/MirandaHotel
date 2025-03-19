@@ -2,8 +2,7 @@
 @import 'nav';
 
 @mixin header_buttons{
-    background-color: transparent;
-    border: none;
+    @include button;
     margin-block: 23px;
     margin-right: 20px;
     line-height: 0;

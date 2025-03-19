@@ -12,7 +12,8 @@
 }
 
 .room__card__icons{
-    bottom: -50%;
+    position: relative;
+    bottom: 22px;
     margin: 0 auto;
     padding: 12px 24px;
     width: fit-content;
@@ -30,7 +31,7 @@
     font-size: 24px;
     line-height: 24px;
     letter-spacing: -0.72px;
-    color: #222222;
+    color: $miranda_black;
 }
 
 .room__card__description{
@@ -39,7 +40,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #777777;
+    color: $miranda_gray;
 }
 
 .room__card__pricing{
@@ -57,7 +58,7 @@
 }
 
 .room__card__price{
-    color: #BEAD8E;
+    color: $miranda_main_color;
 }
 
 .room__card__book{
