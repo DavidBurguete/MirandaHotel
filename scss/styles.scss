@@ -18,8 +18,12 @@ button, input[type=submit]{
 
 .main__header{
     position: relative;
-    background-color: #333333;
+    background-image: url("../img/hotel-room-2.jpg");
     color: white;
+}
+
+.main__header__bg_color{
+    background-color: #333333C9;
 }
 
 .main__header__text{

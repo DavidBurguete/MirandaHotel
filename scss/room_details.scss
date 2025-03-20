@@ -82,9 +82,23 @@
                 color: $miranda_gray;
             }
 
-            input::-webkit-calendar-picker-indicator {
+            .date-wrapper {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .date-cover {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 25px;
+                height: 25px;
+                background: #F8F8F8;
                 background-image: url('../img/calendar.svg');
                 background-repeat: no-repeat;
+                background-position: center;
+                pointer-events: none;
             }
         }
 
@@ -207,10 +221,19 @@
 }
 
 .main__cancellation__description{
-    margin-block: 45px;
+    margin-block: 45px 90px;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: $miranda_gray;
+}
+
+.main__related_rooms--title{
+    margin: 20px;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: $miranda_black;
 }

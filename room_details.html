@@ -41,11 +41,13 @@
 
     <main>
         <div class="main__header">
-            <div class="main__header__text">
-                <h3 class="main__header__text--luxury">The Ultimate Luxury</h3>
-                <h4 class="main__header__text--details">Ultimate Room</h4>
+            <div class="main__header__bg_color">
+                <div class="main__header__text">
+                    <h3 class="main__header__text--luxury">The Ultimate Luxury</h3>
+                    <h4 class="main__header__text--details">Ultimate Room</h4>
+                </div>
+                <p class="breadcrumbs">Home | <span>Room Details</span></p>
             </div>
-            <p class="breadcrumbs">Home | <span>Room Details</span></p>
         </div>
         <div class="main__info">
             <h3>Double Bed</h3>
@@ -58,11 +60,17 @@
                 <p>Check Availability</p>
                 <label for="check_in">
                     Check In
-                    <input type="date" id="check_in">
+                    <div class="date-wrapper">
+                        <input type="date" id="check_in">
+                        <div class="date-cover"></div>
+                    </div>                    
                 </label>
                 <label for="check_out">
                     Check Out
-                    <input type="date" id="check_out">
+                    <div class="date-wrapper">
+                        <input type="date" id="check_out">
+                        <div class="date-cover"></div>
+                    </div>
                 </label>
                 <input type="submit" value="Check Availability">
             </form>
@@ -141,6 +149,7 @@
             <p class="main__cancellation__description">Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.</p>
         </div>
         <div class="main__related_rooms">
+            <h3 class="main__related_rooms--title">Related Rooms</h3>
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -210,8 +219,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="custom-button-prev--room__details">&lt;</div>
+                <div class="custom-button-next--room__details">&gt;</div>
             </div>
         </div>
     </main>
@@ -277,19 +286,12 @@
     </footer>
     <script>
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
+            
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.custom-button-next--room__details',
+                prevEl: '.custom-button-prev--room__details',
             }
         });
     </script>

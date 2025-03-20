@@ -1,0 +1,71 @@
+.swiper .swiper-pagination{
+    bottom: 0;
+}
+
+.page-number, .swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms{
+    @include button;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 39px;
+    height: 39px;
+    line-height: 19px;
+    color: $miranda_black;
+}
+
+.page-number{
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 14px;
+
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+.active{
+    background-color: $miranda_main_color;
+    color: white;
+}
+
+.swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms{
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.custom-button-prev--rooms::after, .custom-button-next--rooms::after{
+    display: none;
+}
+  
+.swiper .custom-button-prev--rooms {
+    margin-right: 10px;
+}
+
+.custom-button-prev--room__details, .custom-button-next--room__details{
+    top: 100px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 32px;
+    height: 32px;
+    line-height: 19px;
+    z-index: 3;
+}
+
+.custom-button-prev--room__details{
+    color: #111111;
+    background-color: white;
+    left: 16px;
+}
+
+.custom-button-next--room__details{
+    color: white;
+    background-color: $miranda_main_color;
+    right: 16px;
+}
