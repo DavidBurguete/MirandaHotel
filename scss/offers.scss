@@ -1,149 +1,152 @@
 @import 'styles';
 @import 'rooms';
 
-.offer__card__room{
-    position: relative;
-    padding-top: 48px;
-    padding-inline: 20px;
-}
 
-.offer__card__room--img{
-    width: 100%;
-}
+.offer__card{
+    &__room{
+        position: relative;
+        padding-top: 3rem;
+        padding-inline: 1.25rem;
 
-.offer__card__room--price{
-    position: absolute;
-    bottom: 0;
-    right: 20px;
+        &--img{
+            width: 100%;
+        }
+        
+        &--price{
+            position: absolute;
+            bottom: 0;
+            right: 1.25rem;
+        
+            *{
+                padding-bottom: 0.9375rem;
+                padding-right: 0.625rem;
+                font-family: "Archivo";
+                font-weight: 700;
+                line-height: 100%;
+                text-align: right;
+            }
 
-    *{
-        padding-bottom: 15px;
-        padding-right: 10px;
+            &--former{
+                font-size: 1.4375rem;
+                text-decoration-line: line-through;
+                color: $miranda_main_color;
+            
+                span{
+                    display: inline-block;
+                    padding-bottom: 0;
+                    font-size: 0.6875rem;
+                }
+            }
+            
+            &--actual{
+                font-size: 1.875rem;
+                color: #DE5777;
+            
+                span{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+
+    &__type{
+        padding: 0.625rem 1.25rem;
         font-family: "Archivo";
-        font-weight: 700;
+        font-weight: 0.9375rem;
+        font-size: 0.875rem;
         line-height: 100%;
-        text-align: right;
-    }
-}
-
-.offer__card__room--price--former{
-    font-size: 23px;
-    text-decoration-line: line-through;
-    color: $miranda_main_color;
-
-    span{
-        display: inline-block;
-        padding-bottom: 0;
-        font-size: 11px;
-    }
-}
-
-.offer__card__room--price--actual{
-    font-size: 30px;
-    color: #DE5777;
-
-    span{
-        font-size: 12px;
-    }
-}
-
-.offer__card__type{
-    padding: 10px 20px;
-    font-family: "Archivo";
-    font-weight: 15px;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    color: $miranda_gray;
-}
-
-.offer__card__name{
-    padding: 10px 20px;
-    width: 85%;
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1.44px;
-    color: $miranda_black;
-}
-
-.offer__card__description{
-    margin: 20px;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: $miranda_gray;
-}
-
-.offer__card__amenities{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px;
-
-    h3{
-        width: 100%;
-        margin-bottom: 40px;
-        font-family: "Old Standard TT";
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 30px;
-        color: $miranda_black;
-    }
-}
-
-.offer__card__amenities__amenitie{
-    display: flex;
-    width: 50%;
-    padding-block: 10px;
-
-    img{
-        width: 16px;
-    }
-
-    p{
-        padding: 4px;
-        font-family: "Roboto";
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 100%;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
         color: $miranda_gray;
     }
-}
+    
+    &__name{
+        padding: 0.625rem 1.25rem;
+        width: 85%;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: -1.44px;
+        color: $miranda_black;
+    }
+    
+    &__description{
+        margin: 1.25rem;
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: $miranda_gray;
+    }
+    
+    &__amenities{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1.25rem;
+    
+        h3{
+            width: 100%;
+            margin-bottom: 2.5rem;
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+            color: $miranda_black;
+        }
 
-.offer__card__book{
-    @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 14px, $l_spacing: 2.8px);
-    margin-inline: 20px;
-    margin-bottom: 40px;
+        &__amenitie{
+            display: flex;
+            width: 50%;
+            padding-block: 0.625rem;
+        
+            img{
+                width: 16px;
+            }
+        
+            p{
+                padding: 0.25rem;
+                font-family: "Roboto";
+                font-weight: 500;
+                font-size: 0.9375rem;
+                line-height: 100%;
+                color: $miranda_gray;
+            }
+        }
+    }
+
+    &__book{
+        @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+        margin-inline: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .offer__popular_rooms{
     position: relative;
     background-color: $miranda_black;
-}
 
-.offer__popular_rooms--list{
-    padding-top: 48px;
-    font-family: "Archivo";
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $miranda_main_color;
-}
-
-.offer__popular_rooms--room{
-    margin: 15px;
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.8px;
-    text-align: center;
-    color: white;
+    &--list{
+        padding-top: 3rem;
+        font-family: "Archivo";
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $miranda_main_color;
+    }
+    
+    &--room{
+        margin: 0.9375rem;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: -0.8px;
+        text-align: center;
+        color: white;
+    }
 }

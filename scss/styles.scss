@@ -19,45 +19,48 @@ button, input[type=submit]{
 .main__header{
     position: relative;
     background-image: url("../img/hotel-room-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
-}
 
-.main__header__bg_color{
-    background-color: #333333C9;
-}
+    &__bg_color{
+        background-color: #333333C9;
+    }
+    
+    &__text{
+        padding: 4.6875rem 1.25rem;
 
-.main__header__text{
-    padding: 75px 20px;
-}
-
-.main__header__text--luxury{
-    margin-bottom: 20px;
-    font-family: "Archivo";
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-}
-
-.main__header__text--details{
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 60px;
-    letter-spacing: -1.2px;
+        &--luxury{
+            margin-bottom: 1.25rem;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+        }
+        
+        &--details{
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: -1.2px;
+        }
+    }
 }
 
 .breadcrumbs{
     position: absolute;
     bottom: 0;
-    right: 20px;
-    padding: 16px 30px;
+    right: 1.25rem;
+    padding: 1rem 1.875rem;
     background-color: white;
     color: $miranda_black;
     font-family: "Archivo";
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     letter-spacing: -0.48px;
 

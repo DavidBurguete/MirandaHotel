@@ -9,7 +9,7 @@ $miranda_black: #222222;
 
 @mixin miranda_button($width, $f_family, $f_weight, $f_size, $l_spacing){
     width: $width;
-    padding: 20px;
+    padding: 1.25rem;
     border: none;
     background-color: $miranda_main_color;
     font-family: $f_family;
@@ -24,5 +24,5 @@ $miranda_black: #222222;
 @mixin field_image{
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: 20px;
+    background-position-x: 1.25rem;
 }

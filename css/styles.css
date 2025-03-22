@@ -1,14 +1,14 @@
 .burger_menu {
   position: relative;
-  margin: 20px;
-  width: 20px;
-  height: 12px;
+  margin: 1.25rem;
+  width: 1.25rem;
+  height: 0.75rem;
   align-self: center;
 }
 .burger_menu div {
   position: relative;
-  height: 2px;
-  width: 20px;
+  height: 0.125rem;
+  width: 1.25rem;
   background-color: black;
 }
 .burger_menu .burger_menu--first {
@@ -16,23 +16,23 @@
   top: 0;
 }
 .burger_menu .burger_menu--first--crossed {
-  top: 5px;
+  top: 0.3125rem;
   rotate: 45deg;
 }
 .burger_menu .burger_menu--middle {
   transition: 500ms;
   justify-self: center;
-  top: 3px;
+  top: 0.1875rem;
 }
 .burger_menu .burger_menu--middle--crossed {
   width: 0%;
 }
 .burger_menu .burger_menu--last {
   transition: 500ms;
-  top: 6px;
+  top: 0.375rem;
 }
 .burger_menu .burger_menu--last--crossed {
-  top: 1px;
+  top: 0.0625rem;
   rotate: -45deg;
 }
 
@@ -47,8 +47,8 @@ nav {
   flex-direction: column;
   width: 100%;
   left: 0;
-  top: 70px;
-  padding: 16px 21px;
+  top: 4.3125rem;
+  padding: 1rem 1.25rem;
   transition: 200ms ease-in-out;
   transform-origin: top;
   background-color: white;
@@ -65,11 +65,11 @@ nav a {
   color: #111111;
   font-family: "Archivo";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   text-align: left;
   align-self: flex-start;
-  margin-block: 16px;
+  margin-block: 1rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -109,22 +109,17 @@ header {
 .logo h1 {
   align-self: center;
   order: 2;
-  font-size: 12px;
-  width: 70px;
-  margin: 0 14px;
+  font-size: 0.8rem;
+  width: 4rem;
+  margin-left: 1rem;
 }
 .logo h1 span {
   font-weight: 400;
 }
-.logo h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.logo img {
   order: 1;
-  width: 36px;
-  height: 36px;
-  font-size: 18px;
-  text-align: center;
+  width: 2.25rem;
+  height: 2.25rem;
   box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
 }
 
@@ -135,16 +130,16 @@ header {
 .header_buttons--user {
   background-color: transparent;
   border: none;
-  margin-block: 23px;
-  margin-right: 20px;
+  margin-block: 1.4rem;
+  margin-right: 1.4rem;
   line-height: 0;
 }
 
 .header_buttons--search {
   background-color: transparent;
   border: none;
-  margin-block: 23px;
-  margin-right: 20px;
+  margin-block: 1.4rem;
+  margin-right: 1.4rem;
   line-height: 0;
 }
 
@@ -154,12 +149,12 @@ header {
   background-image: url("../img/footer background.png");
   background-color: rgba(255, 255, 255, 0.98);
   background-blend-mode: lighten;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .footer__logo {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   font-family: "Archivo";
   font-weight: 700;
   text-transform: uppercase;
@@ -169,24 +164,15 @@ header {
 .footer__logo h1 {
   align-self: center;
   order: 2;
-  font-size: 26px;
-  width: 70px;
-  margin: 0 28px;
+  font-size: 1.625rem;
+  width: 4rem;
+  margin-left: 1.75rem;
 }
 .footer__logo h1 span {
   font-weight: 400;
 }
-.footer__logo h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer__logo img {
   order: 1;
-  width: 80px;
-  height: 80px;
-  font-size: 40px;
-  text-align: center;
-  color: white;
-  background-color: #BEAD8E;
   box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.1490196078);
 }
 
@@ -194,14 +180,14 @@ header {
   color: #777777;
   font-family: "Archivo";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 32px;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 2rem;
 }
 
 .footer__social_media {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .footer__social_media__link {
@@ -209,9 +195,9 @@ header {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.625rem;
 }
 
 .footer__social_media__link--twitter {
@@ -220,23 +206,23 @@ header {
 
 .footer__services--title, .footer__contact--title {
   font-family: "Old Standard TT";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 24px;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer__services__types {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 300px;
+  height: 18.75rem;
   color: #777777;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 48px;
-  margin-bottom: 32px;
+  font-size: 1rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
 }
 
 .footer__contact {
@@ -245,26 +231,26 @@ header {
 
 .footer__contact__contact_card {
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .footer__contact__cc__text {
-  margin-left: 20px;
+  margin-left: 1.25rem;
   width: 100%;
 }
 
 .footer__contact__cc__text--name {
   font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #222222;
 }
 
 .footer__contact__cc__text--type {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 100%;
   color: #777777;
 }
@@ -272,17 +258,17 @@ header {
 .footer__legal {
   background-color: #F8F8F8;
   width: 100%;
-  padding-block: 7px;
+  padding-block: 0.4375rem;
 }
 
 .footer__legal__text {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 100%;
   letter-spacing: -0.48px;
   color: #222222;
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
 }
 
 html, * {
@@ -302,45 +288,44 @@ button, input[type=submit] {
 .main__header {
   position: relative;
   background-image: url("../img/hotel-room-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: white;
 }
-
 .main__header__bg_color {
   background-color: rgba(51, 51, 51, 0.7882352941);
 }
-
 .main__header__text {
-  padding: 75px 20px;
+  padding: 4.6875rem 1.25rem;
 }
-
 .main__header__text--luxury {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-family: "Archivo";
   font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-
 .main__header__text--details {
   font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
   letter-spacing: -1.2px;
 }
 
 .breadcrumbs {
   position: absolute;
   bottom: 0;
-  right: 20px;
-  padding: 16px 30px;
+  right: 1.25rem;
+  padding: 1rem 1.875rem;
   background-color: white;
   color: #222222;
   font-family: "Archivo";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 100%;
   letter-spacing: -0.48px;
 }

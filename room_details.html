@@ -6,10 +6,15 @@
     <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Old%20Standard%20TT' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/room_details.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/toggle_burger_menu.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/toggle_burger_menu.js"></script>
+    <script src="./js/swiper_only_navigation.js"></script>
+    <script src="./js/date_formater.js"></script>
     <title>Hotel Miranda</title>
 </head>
 <body>
@@ -21,7 +26,7 @@
         </div>
         <div class="logo">
             <h1>Hotel <span>Miranda</span></h1>
-            <h2>H</h2>
+            <img src="./img/header_logo.svg">
         </div>
         <div class="header_buttons">
             <button class="header_buttons--user">
@@ -58,19 +63,15 @@
         <div class="main__availability">
             <form>
                 <p>Check Availability</p>
-                <label for="check_in">
+                <label for="false_check_in">
                     Check In
-                    <div class="date-wrapper">
-                        <input type="date" id="check_in">
-                        <div class="date-cover"></div>
-                    </div>                    
+                    <input type="date" id="real_check_in" class="input_not_visible">
+                    <input type="text" id="false_check_in" class="input_background_image input_background_image__calendar" readonly>
                 </label>
-                <label for="check_out">
+                <label for="false_check_out">
                     Check Out
-                    <div class="date-wrapper">
-                        <input type="date" id="check_out">
-                        <div class="date-cover"></div>
-                    </div>
+                    <input type="date" id="real_check_out" class="input_not_visible">
+                    <input type="text" id="false_check_out" class="input_background_image input_background_image__calendar" readonly>
                 </label>
                 <input type="submit" value="Check Availability">
             </form>
@@ -137,8 +138,8 @@
         </div>
         <div class="main__founder">
             <div class="main__founder__images">
-                <img class="main__founder__founder" src="./img/david.jpeg" alt="the founder">
-                <img class="main__founder__verified" src="./img/verified.svg" alt="verified icon">
+                <img class="main__founder__images--founder" src="./img/david.jpeg" alt="the founder">
+                <img class="main__founder__images--verified" src="./img/verified.svg" alt="verified icon">
             </div>
             <h3 class="main__founder__name">David Burguete</h3>
             <h4 class="main__founder__position">Founder, Qux Co.</h4>
@@ -219,8 +220,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="custom-button-prev--room__details">&lt;</div>
-                <div class="custom-button-next--room__details">&gt;</div>
+                <div class="custom-button-prev--only_navigation">&lt;</div>
+                <div class="custom-button-next--only_navigation">&gt;</div>
             </div>
         </div>
     </main>
@@ -229,7 +230,7 @@
         <div class="footer">
             <div class="footer__logo">
                 <h1>Hotel <span>Miranda</span></h1>
-                <h2>H</h2>
+                <img src="./img/footer_logo.svg">
             </div>
             <p class="footer__description">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
             <div class="footer__social_media">
@@ -284,16 +285,5 @@
             <p class="footer__legal__text">Terms of use | Privacy Environmental Policy</p>
         </div>
     </footer>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
-            loop: true,
-            
-            navigation: {
-                nextEl: '.custom-button-next--room__details',
-                prevEl: '.custom-button-prev--room__details',
-            }
-        });
-    </script>
 </body>
 </html>

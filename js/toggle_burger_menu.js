@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener("load", () => {
     let menu = document.querySelector(".burger_menu");
     let nav = document.querySelector("nav");
     let first = document.querySelector(".burger_menu--first");
@@ -20,4 +20,4 @@ window.onload = () => {
             nav.classList.replace("deploy_nav--active", "deploy_nav--non_active");
         }
     })
-};
+});

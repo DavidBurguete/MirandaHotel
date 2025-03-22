@@ -9,19 +9,19 @@
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 39px;
-    height: 39px;
-    line-height: 19px;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.25rem;
     color: $miranda_black;
 }
 
 .page-number{
     font-family: "Oswald";
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
 
     &:not(:last-child){
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 }
 
@@ -33,7 +33,7 @@
 .swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms{
     font-family: "Archivo";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .custom-button-prev--rooms::after, .custom-button-next--rooms::after{
@@ -41,31 +41,31 @@
 }
   
 .swiper .custom-button-prev--rooms {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
-.custom-button-prev--room__details, .custom-button-next--room__details{
-    top: 100px;
+.custom-button-prev--only_navigation, .custom-button-next--only_navigation{
+    top: 6.25rem;
     position: absolute;
     display: inline-flex;
     justify-content: center;
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 32px;
-    height: 32px;
-    line-height: 19px;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.25rem;
     z-index: 3;
 }
 
-.custom-button-prev--room__details{
+.custom-button-prev--only_navigation{
     color: #111111;
     background-color: white;
-    left: 16px;
+    left: 1rem;
 }
 
-.custom-button-next--room__details{
+.custom-button-next--only_navigation{
     color: white;
     background-color: $miranda_main_color;
-    right: 16px;
+    right: 1rem;
 }

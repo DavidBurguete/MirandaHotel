@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/offers.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/toggle_burger_menu.js"></script>
+    <script src="./js/toggle_burger_menu.js"></script>
+    <script src="./js/swiper_only_navigation.js"></script>
     <title>Hotel Miranda</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
         </div>
         <div class="logo">
             <h1>Hotel <span>Miranda</span></h1>
-            <h2>H</h2>
+            <img src="./img/header_logo.svg">
         </div>
         <div class="header_buttons">
             <button class="header_buttons--user">
@@ -278,7 +279,7 @@
                         <div class="room__card">
                             <img src="./img/hotel-room-1.jpg"/>
                             <div class="room__card__bottom">
-                                <div class="room__card__icons">
+                                <div class="room__card__bottom__icons">
                                     <img src="./img/bed.svg" alt="bed icon">
                                     <img src="./img/wifi.svg" alt="wifi icon">
                                     <img src="./img/car.svg" alt="car icon">
@@ -287,11 +288,11 @@
                                     <img src="./img/no-smoking.svg" alt="no smoking icon">
                                     <img src="./img/cocktail-drink.svg" alt="cocktail drink icon">
                                 </div>
-                                <p class="room__card__type">Minimal Duplex Room</p>
-                                <p class="room__card__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                                <div class="room__card__pricing">
-                                    <p class="room__card__price">$345/Night</p>
-                                    <p class="room__card__book">Booking Now</p>
+                                <p class="room__card__bottom__type">Minimal Duplex Room</p>
+                                <p class="room__card__bottom__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                                <div class="room__card__bottom__pricing">
+                                    <p class="room__card__bottom__pricing__price">$345/Night</p>
+                                    <p class="room__card__bottom__pricing__book">Booking Now</p>
                                 </div>
                             </div>
                         </div>
@@ -300,7 +301,7 @@
                         <div class="room__card">
                             <img src="./img/hotel-room-2.jpg"/>
                             <div class="room__card__bottom">
-                                <div class="room__card__icons">
+                                <div class="room__card__bottom__icons">
                                     <img src="./img/bed.svg" alt="bed icon">
                                     <img src="./img/wifi.svg" alt="wifi icon">
                                     <img src="./img/car.svg" alt="car icon">
@@ -309,11 +310,11 @@
                                     <img src="./img/no-smoking.svg" alt="no smoking icon">
                                     <img src="./img/cocktail-drink.svg" alt="cocktail drink icon">
                                 </div>
-                                <p class="room__card__type">Minimal Duplex Room</p>
-                                <p class="room__card__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                                <div class="room__card__pricing">
-                                    <p class="room__card__price">$345/Night</p>
-                                    <p class="room__card__book">Booking Now</p>
+                                <p class="room__card__bottom__type">Minimal Duplex Room</p>
+                                <p class="room__card__bottom__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                                <div class="room__card__bottom__pricing">
+                                    <p class="room__card__bottom__pricing__price">$345/Night</p>
+                                    <p class="room__card__bottom__pricing__book">Booking Now</p>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +323,7 @@
                         <div class="room__card">
                             <img src="./img/hotel-room-4.jpg"/>
                             <div class="room__card__bottom">
-                                <div class="room__card__icons">
+                                <div class="room__card__bottom__icons">
                                     <img src="./img/bed.svg" alt="bed icon">
                                     <img src="./img/wifi.svg" alt="wifi icon">
                                     <img src="./img/car.svg" alt="car icon">
@@ -331,20 +332,20 @@
                                     <img src="./img/no-smoking.svg" alt="no smoking icon">
                                     <img src="./img/cocktail-drink.svg" alt="cocktail drink icon">
                                 </div>
-                                <p class="room__card__type">Minimal Duplex Room</p>
-                                <p class="room__card__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                                <div class="room__card__pricing">
-                                    <p class="room__card__price">$345/Night</p>
-                                    <p class="room__card__book">Booking Now</p>
+                                <p class="room__card__bottom__type">Minimal Duplex Room</p>
+                                <p class="room__card__bottom__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                                <div class="room__card__bottom__pricing">
+                                    <p class="room__card__bottom__pricing__price">$345/Night</p>
+                                    <p class="room__card__bottom__pricing__book">Booking Now</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="custom-button-prev--only_navigation">&lt;</div>
+                <div class="custom-button-next--only_navigation">&gt;</div>
             </div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </main>
 
@@ -352,7 +353,7 @@
         <div class="footer">
             <div class="footer__logo">
                 <h1>Hotel <span>Miranda</span></h1>
-                <h2>H</h2>
+                <img src="./img/footer_logo.svg">
             </div>
             <p class="footer__description">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
             <div class="footer__social_media">
@@ -407,20 +408,5 @@
             <p class="footer__legal__text">Terms of use | Privacy Environmental Policy</p>
         </div>
     </footer>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
-            loop: true,
-
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
-    </script>
 </body>
 </html>
