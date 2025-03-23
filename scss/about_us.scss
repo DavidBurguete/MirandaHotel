@@ -1,0 +1,252 @@
+@import 'styles';
+
+.video{
+    margin: 3.75rem 1.25rem;
+    width: calc(100% - (1.25rem * 2));
+}
+
+.main__description{
+    margin-block: -1rem 3.125rem;
+    margin-inline: 1.25rem;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 100%;
+    letter-spacing: -1.16px;
+    color: $miranda_black;
+}
+
+.main__availabilities{
+    margin: 0 1.25rem 3.125rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        max-width: 10rem;
+        width: 50%;
+        height: 10rem;
+
+        &>*{
+            margin: 0 auto;
+        }
+
+        img{
+            width: fit-content;
+        }
+
+        p{
+            padding-top: 0.75rem;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 0.75rem;
+            line-height: 0.875rem;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            color: $miranda_black;
+        }
+    }
+
+    &__card--inverted{
+        background-color: $miranda_main_color;
+        p{
+            color: white;
+        }
+    }
+}
+
+.restaurant{
+    margin: 1.25rem;
+    padding: 1.25rem;
+
+    img{
+        width: 100%;
+    }
+
+    &__text{
+        padding-top: 2rem;
+
+        &__title{
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 100%;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: $miranda_gray;
+        }
+
+        &__info{
+            padding-block: 2rem;
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 100%;
+            letter-spacing: -1.05px;
+            color: $miranda_black;
+        }
+
+        &__description{
+            font-family: "Archivo";
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: $miranda_gray;
+        }
+
+        &__look{
+            @include miranda_button($width: 75%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+            margin-top: 1rem;
+        }
+
+    }
+}
+
+.features{
+    padding: 1.25rem;
+    background-color: $miranda_black;
+
+    &__title{
+        margin-top: 1.75rem;
+        font-family: "Archivo";
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+    }
+
+    &__description{
+        margin-block: 1rem;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+        letter-spacing: -1.2px;
+        text-align: center;
+        color: white;
+    }
+
+    &__card{
+        position: relative;
+        padding: 4.5rem 1.125rem;
+        margin-bottom: 2.75rem;
+        background-color: #292929;
+
+        &__number{
+            position: absolute;
+            top: -0.5rem;
+            right: 0.75rem;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 7.5rem;
+            line-height: 8.125rem;
+            color: $miranda_black;
+        }
+
+        &__title{
+            margin-block: 1.5rem;
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+            letter-spacing: -0.9px;
+            color: white;
+        }
+
+        &__description{
+            font-family: "Archivo";
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: white;
+        }
+    }
+}
+
+.swiper .swiper-pagination-bullet{
+    background: #333333;
+    opacity: 1;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: $miranda_main_color;
+}
+
+.facts{
+    margin: 3.75rem 1.25rem;
+
+    &__title{
+        font-family: "Archivo";
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        color: $miranda_gray;
+    }
+
+    &__description{
+        margin-top: 1.5rem;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+        letter-spacing: -1.2px;
+        color: $miranda_black;
+    }
+
+    &__type{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        &__card{
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            padding: 1rem;
+
+            &__text{
+                margin-left: 1rem;
+                width: 100%;
+
+                &__number{
+                    font-family: "Old Standard TT";
+                    font-weight: 400;
+                    font-size: 3.75rem;
+                    line-height: 3.75rem;
+                    letter-spacing: -1.8px;
+                    color: $miranda_black;
+                }
+
+                &__text{
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    color: $miranda_gray;
+                }
+            }
+        }
+    }
+
+    &__image{
+        margin-block: 2.75rem;
+    }
+
+    & .swiper .swiper-pagination-bullet{
+        background: #EDEDED;
+        opacity: 1;
+    }
+
+    & .swiper .swiper-pagination-bullet-active{
+        background: $miranda_main_color;
+    }
+}
