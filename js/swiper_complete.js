@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper_complete', {
         direction: 'horizontal',
         loop: true,
 

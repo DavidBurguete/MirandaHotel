@@ -368,6 +368,70 @@ button, input[type=submit] {
   color: #BEAD8E;
 }
 
+.main__availability, .main__arrival {
+  padding: 2.5rem;
+}
+.main__availability form, .main__arrival form {
+  display: flex;
+  flex-direction: column;
+}
+.main__availability form p, .main__arrival form p {
+  text-align: center;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 100%;
+  letter-spacing: -0.54px;
+  color: #222222;
+}
+.main__availability form label, .main__arrival form label {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1.25rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: #222222;
+}
+.main__availability form label input, .main__arrival form label input {
+  margin-block: 0.5rem;
+  padding: 1.5625rem 1.25rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #F8F8F8;
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: #777777;
+}
+.main__availability form label .input_not_visible, .main__arrival form label .input_not_visible {
+  display: none;
+}
+.main__availability form label .input_background_image, .main__arrival form label .input_background_image {
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 1.875rem);
+}
+.main__availability form label .input_background_image__calendar, .main__arrival form label .input_background_image__calendar {
+  background-image: url("../img/calendar.svg");
+}
+.main__availability form input[type=submit], .main__arrival form input[type=submit] {
+  width: 100%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+}
+
 .burger_menu {
   position: relative;
   margin: 1.25rem;
@@ -875,104 +939,62 @@ button, input[type=submit] {
   color: #BDBDBD;
 }
 
-.offer__card__room {
-  position: relative;
-  padding-top: 3rem;
-  padding-inline: 1.25rem;
+.main__arrival {
+  background-color: #222222;
+  padding: 1.25rem;
 }
-.offer__card__room--img {
-  width: 100%;
+.main__arrival form label {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: white;
 }
-.offer__card__room--price {
-  position: absolute;
-  bottom: 0;
-  right: 1.25rem;
+.main__arrival form label input {
+  padding-block: 0.875rem;
+  padding-left: 1.5rem;
+  border-bottom: 2px solid #BEAD8E;
+  background-color: transparent;
+  font-family: "Roboto";
 }
-.offer__card__room--price * {
-  padding-bottom: 0.9375rem;
-  padding-right: 0.625rem;
+.main__arrival form label .input_background_image {
+  background-position-x: left;
+}
+.main__arrival form label .input_background_image__calendar {
+  background-image: url("../img/calendar_dark.svg");
+}
+.main__arrival form input[type=submit] {
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.about {
+  margin: 3.5rem 1.25rem 0 1.25rem;
+}
+.about__text__name {
   font-family: "Archivo";
   font-weight: 700;
-  line-height: 100%;
-  text-align: right;
-}
-.offer__card__room--price--former {
-  font-size: 1.4375rem;
-  text-decoration-line: line-through;
-  color: #BEAD8E;
-}
-.offer__card__room--price--former span {
-  display: inline-block;
-  padding-bottom: 0;
-  font-size: 0.6875rem;
-}
-.offer__card__room--price--actual {
-  font-size: 1.875rem;
-  color: #DE5777;
-}
-.offer__card__room--price--actual span {
-  font-size: 0.75rem;
-}
-.offer__card__type {
-  padding: 0.625rem 1.25rem;
-  font-family: "Archivo";
-  font-weight: 0.9375rem;
-  font-size: 0.875rem;
-  line-height: 100%;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   letter-spacing: 2.8px;
-  text-transform: uppercase;
   color: #777777;
 }
-.offer__card__name {
-  padding: 0.625rem 1.25rem;
-  width: 85%;
+.about__text__title {
+  padding-block: 2rem;
   font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: -1.44px;
-  color: #222222;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: #111111;
 }
-.offer__card__description {
-  margin: 1.25rem;
-  font-family: "Roboto";
+.about__text__description {
+  font-family: "Archivo";
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: #777777;
 }
-.offer__card__amenities {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1.25rem;
-}
-.offer__card__amenities h3 {
-  width: 100%;
-  margin-bottom: 2.5rem;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 1.875rem;
-  line-height: 1.875rem;
-  color: #222222;
-}
-.offer__card__amenities__amenitie {
-  display: flex;
-  width: 50%;
-  padding-block: 0.625rem;
-}
-.offer__card__amenities__amenitie img {
-  width: 16px;
-}
-.offer__card__amenities__amenitie p {
-  padding: 0.25rem;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 0.9375rem;
-  line-height: 100%;
-  color: #777777;
-}
-.offer__card__book {
+.about__text__book {
+  margin-top: 2rem;
   width: 70%;
   padding: 1.25rem;
   border: none;
@@ -984,34 +1006,321 @@ button, input[type=submit] {
   letter-spacing: 2.8px;
   text-transform: uppercase;
   color: white;
-  margin-inline: 1.25rem;
-  margin-bottom: 2.5rem;
+}
+.about__team, .about__luxury {
+  padding: 3rem 3.25rem;
+}
+.about__team__img, .about__luxury__img {
+  display: block;
+  width: 100%;
+}
+.about__team__card, .about__luxury__card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+.about__team__card__icon, .about__luxury__card__icon {
+  margin: 0 auto;
+  width: fit-content;
+}
+.about__team__card__title, .about__luxury__card__title {
+  padding-block: 2rem;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.9px;
+  text-align: center;
+  color: #111111;
+}
+.about__team__card__description, .about__luxury__card__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  text-align: center;
+  color: #111111;
+}
+.about__luxury__card {
+  background-color: #111111;
+}
+.about__luxury__card__title, .about__luxury__card__description {
+  color: white;
 }
 
-.offer__popular_rooms {
+.popular_rooms {
   position: relative;
-  background-color: #222222;
 }
-.offer__popular_rooms--list {
+.popular_rooms--list {
   padding-top: 3rem;
   font-family: "Archivo";
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 100%;
   letter-spacing: 2.8px;
   text-transform: uppercase;
   text-align: center;
-  color: #BEAD8E;
+  color: #777777;
 }
-.offer__popular_rooms--room {
-  margin: 0.9375rem;
+.popular_rooms--room {
+  margin-block: 0.9375rem;
   font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: -0.8px;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
   text-align: center;
+  color: #222222;
+}
+
+.room__card {
+  position: relative;
+  margin: 1.25rem 0;
+}
+.room__card__icons {
+  position: absolute;
+  top: -1.375rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+}
+.room__card__icons > :not(:last-child) {
+  padding-right: 1rem;
+}
+.room__card__bottom {
+  margin-inline: 1.25rem;
+  bottom: 1.25rem;
+}
+.room__card__bottom__type {
+  margin-top: 1.25rem;
+}
+
+.place {
+  padding: 3.5rem 1.25rem;
+  background-color: #222222;
+}
+.place__name {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #BEAD8E;
+}
+.place__title {
+  padding-block: 2rem;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: white;
+}
+.place__description {
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #C2C2C2;
+}
+.place .video {
+  margin-block: 2rem;
+}
+.place__book {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
   color: white;
 }
 
-/*# sourceMappingURL=offers.css.map */
+.features {
+  padding: 1.25rem;
+}
+.features__title {
+  margin-top: 1.75rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #777777;
+}
+.features__description {
+  margin-block: 1rem;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  text-align: center;
+}
+.features__card {
+  position: relative;
+  padding: 4.5rem 1.125rem 3rem 1.125rem;
+}
+.features__card__number {
+  position: absolute;
+  top: -0.5rem;
+  right: 0.75rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 7.5rem;
+  line-height: 8.125rem;
+  color: rgba(34, 34, 34, 0.04);
+}
+.features__card__title {
+  margin-block: 1.5rem;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.9px;
+  color: #222222;
+}
+.features__card__description {
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #777777;
+}
+
+.swiper_complete .swiper-pagination-bullet, .swiper_only_pagination .swiper-pagination-bullet {
+  background: #EDEDED;
+  opacity: 1;
+}
+
+.swiper_complete .swiper-pagination-bullet-active, .swiper_only_pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
+}
+
+.menu {
+  position: relative;
+  padding: 3.5rem 1.25rem;
+}
+.menu__icon {
+  position: relative;
+  left: calc(100% - 5.5625rem + 1.25rem);
+}
+.menu__name {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+}
+.menu__title {
+  padding-block: 2rem;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: #222222;
+}
+.menu__card {
+  display: flex;
+  margin-block: 1rem;
+}
+.menu__card__img {
+  width: 7.5rem;
+}
+.menu__card__text {
+  margin-left: 2rem;
+}
+.menu__card__text__name {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.72px;
+  color: #222222;
+}
+.menu__card__text__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #222222;
+}
+
+.swiper-slide {
+  margin-bottom: 2rem;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  top: auto;
+  bottom: 0;
+  width: 2rem;
+  height: 2rem;
+  z-index: 3;
+}
+
+.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+  content: none;
+}
+
+.swiper .swiper-button-prev {
+  color: #111111;
+  background-color: white;
+  left: auto;
+  right: 4rem;
+}
+
+.swiper .swiper-button-next {
+  color: white;
+  background-color: #BEAD8E;
+  right: 1rem;
+}
+
+.food_image {
+  padding: 1.25rem;
+}
+
+.info {
+  margin-block: 3rem;
+  padding: 3rem 5.125rem;
+  background-color: #222222;
+  text-align: center;
+}
+.info__card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.info__card__number {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 136%;
+  color: white;
+}
+.info__card__number span {
+  font-size: 1rem;
+}
+.info__card__text {
+  position: relative;
+  top: -1.75rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 136%;
+  color: #999999;
+}
+
+/*# sourceMappingURL=index.css.map */

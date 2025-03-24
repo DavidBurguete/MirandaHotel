@@ -1,0 +1,61 @@
+.main__availability, .main__arrival{
+    padding: 2.5rem;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            text-align: center;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 100%;
+            letter-spacing: -0.54px;
+            color: $miranda_black;
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            margin-block: 1.25rem;
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 100%;
+            color: $miranda_black;
+
+            input{
+                margin-block: 0.5rem;
+                padding: 1.5625rem 1.25rem;
+                width: 100%;
+                border: 0;
+                outline: none;
+                background-color: #F8F8F8;
+                font-family: "Archivo";
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 100%;
+                color: $miranda_gray;
+            }
+
+            .input_not_visible{
+                display: none;
+            }
+
+            .input_background_image{
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: calc(100% - 1.875rem);
+            }
+
+            .input_background_image__calendar{
+                background-image: url("../img/calendar.svg");
+            }
+        }
+
+        input[type=submit]{
+            @include miranda_button($width: 100%, $f_family: "Archivo", $f_weight: 400, $f_size: 0.875rem, $l_spacing: 2.8px);
+        }
+    }
+}

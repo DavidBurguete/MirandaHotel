@@ -1,10 +1,10 @@
 window.addEventListener("load", () => {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper_only_pagination', {
         direction: 'horizontal',
         loop: true,
 
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-only-pagination',
             type: 'custom',
             clickable: true, 
             renderCustom: function (swiper, current, total) {
@@ -51,6 +51,11 @@ window.addEventListener("load", () => {
 
                 return paginationHTML;
             }
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         }
     });
 

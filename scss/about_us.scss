@@ -101,6 +101,7 @@
         &__look{
             @include miranda_button($width: 75%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
             margin-top: 1rem;
+            box-shadow: 0px 14px 24px 0px #BEAD8E5C;
         }
 
     }
@@ -170,12 +171,12 @@
     }
 }
 
-.swiper .swiper-pagination-bullet{
+.swiper_complete .swiper-pagination-bullet, .swiper_only_pagination .swiper-pagination-bullet{
     background: #333333;
     opacity: 1;
 }
 
-.swiper .swiper-pagination-bullet-active{
+.swiper_complete .swiper-pagination-bullet-active, .swiper_only_pagination .swiper-pagination-bullet-active{
     background: $miranda_main_color;
 }
 
@@ -241,12 +242,12 @@
         margin-block: 2.75rem;
     }
 
-    & .swiper .swiper-pagination-bullet{
+    & .swiper_complete .swiper-pagination-bullet, & .swiper_only_pagination .swiper-pagination-bullet{
         background: #EDEDED;
         opacity: 1;
     }
 
-    & .swiper .swiper-pagination-bullet-active{
+    & .swiper_complete .swiper-pagination-bullet-active, & .swiper_only_pagination .swiper-pagination-bullet-active{
         background: $miranda_main_color;
     }
 }

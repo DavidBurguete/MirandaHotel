@@ -297,9 +297,11 @@ button, input[type=submit] {
   background-color: rgba(51, 51, 51, 0.7882352941);
 }
 .main__header__text {
-  padding: 4.6875rem 1.25rem;
+  padding-inline: 1.25rem;
+  padding-block: 4.6875rem;
 }
 .main__header__text--luxury {
+  width: 80%;
   margin-bottom: 1.25rem;
   font-family: "Archivo";
   font-weight: 700;
@@ -314,6 +316,39 @@ button, input[type=submit] {
   font-size: 3.5rem;
   line-height: 3.75rem;
   letter-spacing: -1.2px;
+}
+.main__header__buttons {
+  padding-inline: 1.25rem;
+  padding-bottom: 4.6875rem;
+}
+.main__header__buttons__tour {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.main__header__buttons__learn {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.33);
 }
 
 .breadcrumbs {
@@ -632,9 +667,11 @@ button, input[type=submit] {
   background-color: rgba(51, 51, 51, 0.7882352941);
 }
 .main__header__text {
-  padding: 4.6875rem 1.25rem;
+  padding-inline: 1.25rem;
+  padding-block: 4.6875rem;
 }
 .main__header__text--luxury {
+  width: 80%;
   margin-bottom: 1.25rem;
   font-family: "Archivo";
   font-weight: 700;
@@ -649,6 +686,39 @@ button, input[type=submit] {
   font-size: 3.5rem;
   line-height: 3.75rem;
   letter-spacing: -1.2px;
+}
+.main__header__buttons {
+  padding-inline: 1.25rem;
+  padding-bottom: 4.6875rem;
+}
+.main__header__buttons__tour {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.main__header__buttons__learn {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.33);
 }
 
 .breadcrumbs {
@@ -668,11 +738,15 @@ button, input[type=submit] {
   color: #BEAD8E;
 }
 
-.swiper .swiper-pagination {
+.swiper_complete .swiper-pagination, .swiper_only_pagination .swiper-pagination {
   bottom: 0;
 }
 
-.page-number, .swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms {
+.page-number,
+.swiper_complete .custom-button-prev--rooms,
+.swiper_complete .custom-button-next--rooms,
+.swiper_only_pagination .custom-button-prev--rooms,
+.swiper_only_pagination .custom-button-next--rooms {
   background-color: transparent;
   border: none;
   display: inline-flex;
@@ -700,7 +774,10 @@ button, input[type=submit] {
   color: white;
 }
 
-.swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms {
+.swiper_complete .custom-button-prev--rooms,
+.swiper_complete .custom-button-next--rooms,
+.swiper_only_pagination .custom-button-prev--rooms,
+.swiper_only_pagination .custom-button-next--rooms {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 1.25rem;
@@ -710,7 +787,7 @@ button, input[type=submit] {
   display: none;
 }
 
-.swiper .custom-button-prev--rooms {
+.swiper_complete .custom-button-prev--rooms, .swiper_only_pagination .custom-button-prev--rooms {
   margin-right: 0.625rem;
 }
 
@@ -798,6 +875,70 @@ button, input[type=submit] {
   color: #BDBDBD;
 }
 
+.main__availability, .main__arrival {
+  padding: 2.5rem;
+}
+.main__availability form, .main__arrival form {
+  display: flex;
+  flex-direction: column;
+}
+.main__availability form p, .main__arrival form p {
+  text-align: center;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 100%;
+  letter-spacing: -0.54px;
+  color: #222222;
+}
+.main__availability form label, .main__arrival form label {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1.25rem;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: #222222;
+}
+.main__availability form label input, .main__arrival form label input {
+  margin-block: 0.5rem;
+  padding: 1.5625rem 1.25rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #F8F8F8;
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: #777777;
+}
+.main__availability form label .input_not_visible, .main__arrival form label .input_not_visible {
+  display: none;
+}
+.main__availability form label .input_background_image, .main__arrival form label .input_background_image {
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 1.875rem);
+}
+.main__availability form label .input_background_image__calendar, .main__arrival form label .input_background_image__calendar {
+  background-image: url("../img/calendar.svg");
+}
+.main__availability form input[type=submit], .main__arrival form input[type=submit] {
+  width: 100%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+}
+
 .main__info {
   margin: 3rem 1.25rem;
 }
@@ -831,70 +972,6 @@ button, input[type=submit] {
 }
 .main__info img {
   width: 100%;
-}
-
-.main__availability {
-  margin: 2.5rem;
-}
-.main__availability form {
-  display: flex;
-  flex-direction: column;
-}
-.main__availability form p {
-  text-align: center;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 100%;
-  letter-spacing: -0.54px;
-  color: #222222;
-}
-.main__availability form label {
-  display: flex;
-  flex-direction: column;
-  margin-block: 1.25rem;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 100%;
-  color: #222222;
-}
-.main__availability form label input {
-  margin-block: 0.5rem;
-  padding: 1.5625rem 1.25rem;
-  width: 100%;
-  border: 0;
-  outline: none;
-  background-color: #F8F8F8;
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 100%;
-  color: #777777;
-}
-.main__availability form label .input_not_visible {
-  display: none;
-}
-.main__availability form label .input_background_image {
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: calc(100% - 1.875rem);
-}
-.main__availability form label .input_background_image__calendar {
-  background-image: url("../img/calendar.svg");
-}
-.main__availability form input[type=submit] {
-  width: 100%;
-  padding: 1.25rem;
-  border: none;
-  background-color: #BEAD8E;
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 100%;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: white;
 }
 
 .main__description {

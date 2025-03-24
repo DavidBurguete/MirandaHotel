@@ -1,8 +1,12 @@
-.swiper .swiper-pagination{
+.swiper_complete .swiper-pagination, .swiper_only_pagination .swiper-pagination{
     bottom: 0;
 }
 
-.page-number, .swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms{
+.page-number, 
+.swiper_complete .custom-button-prev--rooms, 
+.swiper_complete .custom-button-next--rooms, 
+.swiper_only_pagination .custom-button-prev--rooms, 
+.swiper_only_pagination .custom-button-next--rooms{
     @include button;
     display: inline-flex;
     justify-content: center;
@@ -30,7 +34,10 @@
     color: white;
 }
 
-.swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms{
+.swiper_complete .custom-button-prev--rooms, 
+.swiper_complete .custom-button-next--rooms,
+.swiper_only_pagination .custom-button-prev--rooms, 
+.swiper_only_pagination .custom-button-next--rooms{
     font-family: "Archivo";
     font-weight: 400;
     font-size: 1.25rem;
@@ -40,7 +47,7 @@
     display: none;
 }
   
-.swiper .custom-button-prev--rooms {
+.swiper_complete .custom-button-prev--rooms, .swiper_only_pagination .custom-button-prev--rooms {
     margin-right: 0.625rem;
 }
 

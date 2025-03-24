@@ -297,9 +297,11 @@ button, input[type=submit] {
   background-color: rgba(51, 51, 51, 0.7882352941);
 }
 .main__header__text {
-  padding: 4.6875rem 1.25rem;
+  padding-inline: 1.25rem;
+  padding-block: 4.6875rem;
 }
 .main__header__text--luxury {
+  width: 80%;
   margin-bottom: 1.25rem;
   font-family: "Archivo";
   font-weight: 700;
@@ -314,6 +316,39 @@ button, input[type=submit] {
   font-size: 3.5rem;
   line-height: 3.75rem;
   letter-spacing: -1.2px;
+}
+.main__header__buttons {
+  padding-inline: 1.25rem;
+  padding-bottom: 4.6875rem;
+}
+.main__header__buttons__tour {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.main__header__buttons__learn {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.33);
 }
 
 .breadcrumbs {
@@ -333,11 +368,15 @@ button, input[type=submit] {
   color: #BEAD8E;
 }
 
-.swiper .swiper-pagination {
+.swiper_complete .swiper-pagination, .swiper_only_pagination .swiper-pagination {
   bottom: 0;
 }
 
-.page-number, .swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms {
+.page-number,
+.swiper_complete .custom-button-prev--rooms,
+.swiper_complete .custom-button-next--rooms,
+.swiper_only_pagination .custom-button-prev--rooms,
+.swiper_only_pagination .custom-button-next--rooms {
   background-color: transparent;
   border: none;
   display: inline-flex;
@@ -365,7 +404,10 @@ button, input[type=submit] {
   color: white;
 }
 
-.swiper .custom-button-prev--rooms, .swiper .custom-button-next--rooms {
+.swiper_complete .custom-button-prev--rooms,
+.swiper_complete .custom-button-next--rooms,
+.swiper_only_pagination .custom-button-prev--rooms,
+.swiper_only_pagination .custom-button-next--rooms {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 1.25rem;
@@ -375,7 +417,7 @@ button, input[type=submit] {
   display: none;
 }
 
-.swiper .custom-button-prev--rooms {
+.swiper_complete .custom-button-prev--rooms, .swiper_only_pagination .custom-button-prev--rooms {
   margin-right: 0.625rem;
 }
 

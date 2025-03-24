@@ -297,9 +297,11 @@ button, input[type=submit] {
   background-color: rgba(51, 51, 51, 0.7882352941);
 }
 .main__header__text {
-  padding: 4.6875rem 1.25rem;
+  padding-inline: 1.25rem;
+  padding-block: 4.6875rem;
 }
 .main__header__text--luxury {
+  width: 80%;
   margin-bottom: 1.25rem;
   font-family: "Archivo";
   font-weight: 700;
@@ -314,6 +316,39 @@ button, input[type=submit] {
   font-size: 3.5rem;
   line-height: 3.75rem;
   letter-spacing: -1.2px;
+}
+.main__header__buttons {
+  padding-inline: 1.25rem;
+  padding-bottom: 4.6875rem;
+}
+.main__header__buttons__tour {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.main__header__buttons__learn {
+  width: 70%;
+  padding: 1.25rem;
+  border: none;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.33);
 }
 
 .breadcrumbs {
@@ -435,6 +470,7 @@ button, input[type=submit] {
   text-transform: uppercase;
   color: white;
   margin-top: 1rem;
+  box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.3607843137);
 }
 
 .features {
@@ -495,12 +531,12 @@ button, input[type=submit] {
   color: white;
 }
 
-.swiper .swiper-pagination-bullet {
+.swiper_complete .swiper-pagination-bullet, .swiper_only_pagination .swiper-pagination-bullet {
   background: #333333;
   opacity: 1;
 }
 
-.swiper .swiper-pagination-bullet-active {
+.swiper_complete .swiper-pagination-bullet-active, .swiper_only_pagination .swiper-pagination-bullet-active {
   background: #BEAD8E;
 }
 
@@ -558,11 +594,11 @@ button, input[type=submit] {
 .facts__image {
   margin-block: 2.75rem;
 }
-.facts .swiper .swiper-pagination-bullet {
+.facts .swiper_complete .swiper-pagination-bullet, .facts .swiper_only_pagination .swiper-pagination-bullet {
   background: #EDEDED;
   opacity: 1;
 }
-.facts .swiper .swiper-pagination-bullet-active {
+.facts .swiper_complete .swiper-pagination-bullet-active, .facts .swiper_only_pagination .swiper-pagination-bullet-active {
   background: #BEAD8E;
 }
 

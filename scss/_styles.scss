@@ -29,9 +29,11 @@ button, input[type=submit]{
     }
     
     &__text{
-        padding: 4.6875rem 1.25rem;
+        padding-inline: 1.25rem;
+        padding-block: 4.6875rem;
 
         &--luxury{
+            width: 80%;
             margin-bottom: 1.25rem;
             font-family: "Archivo";
             font-weight: 700;
@@ -47,6 +49,22 @@ button, input[type=submit]{
             font-size: 3.5rem;
             line-height: 3.75rem;
             letter-spacing: -1.2px;
+        }
+    }
+
+    &__buttons{
+        padding-inline: 1.25rem;
+        padding-bottom: 4.6875rem;
+
+        &__tour{
+            @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+            margin-bottom: 1.5rem;
+        }
+
+        &__learn{
+            @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+            background-color: transparent;
+            border: 2px solid rgba($color: white, $alpha: 0.33);
         }
     }
 }
