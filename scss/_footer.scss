@@ -1,13 +1,16 @@
-.footer{
-    display: flex;
-    flex-direction: column;
+footer{
     background-image: url("../img/footer\ background.png");
     background-color: rgba(255, 255, 255, 0.98);
     background-blend-mode: lighten;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
     padding: 1.25rem;
 }
 
-.footer__logo{
+.footer__data__logo{
     display: flex;
     margin-bottom: 3.125rem;
     font-family: "Archivo";
@@ -34,7 +37,7 @@
     }
 }
 
-.footer__description{
+.footer__data__description{
     color: $miranda_gray;
     font-family: "Archivo";
     font-weight: 400;
@@ -43,12 +46,12 @@
     margin-bottom: 2rem;
 }
 
-.footer__social_media{
+.footer__data__social_media{
     display: flex;
     margin-bottom: 2rem;
 }
 
-.footer__social_media__link{
+.footer__data__social_media__link{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -56,9 +59,10 @@
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 0.625rem;
+    background-color: #F8F8F8;
 }
 
-.footer__social_media__link--twitter{
+.footer__data__social_media__link--twitter{
     background-color: $miranda_main_color;
 }
 
@@ -129,4 +133,43 @@
     letter-spacing: -0.48px;
     color: $miranda_black;
     padding: 0.75rem 1.25rem;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 65%;
+        height: 34.5rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer__data, .footer__services, .footer__contact{
+        padding-block: 6.25rem;
+    }
+
+    .footer__data{
+        width: 25%;
+    }    
+
+    .footer__services{
+        width: 33%;
+    }
+
+    .footer__contact{
+        width: 20%;
+    }
+
+    .footer__legal{
+        display: flex;
+        justify-content: space-around;
+        height: 5rem;
+        padding: 0;
+    }
+
+    .footer__legal__text{
+        padding: 2rem 1.25rem;
+    }
 }
