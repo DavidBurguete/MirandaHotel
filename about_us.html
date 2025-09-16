@@ -15,25 +15,34 @@
 </head>
 <body>
     <header>
-        <div class="burger_menu">
-            <div class="burger_menu--first"></div>
-            <div class="burger_menu--middle"></div>
-            <div class="burger_menu--last"></div>
-        </div>
-        <div class="logo">
-            <h1>Hotel <span>Miranda</span></h1>
-            <img src="./img/header_logo.svg">
-        </div>
-        <div class="header_buttons">
-            <button class="header_buttons--user">
-                <img src="img/user.svg" alt="user icon">
-            </button>
-            <button class="header_buttons--search">
-                <img src="img/magnifying glass.svg" alt="magnifying glass icon">
-            </button>
+        <p class="pc_header">We Make Your Feel Comfortable</p>
+        <div class="header--wrapper">
+            <div class="burger_menu">
+                <div class="burger_menu--first"></div>
+                <div class="burger_menu--middle"></div>
+                <div class="burger_menu--last"></div>
+            </div>
+            <a href="./index.html" class="logo">
+                <h1>Hotel <span>Miranda</span></h1>
+                <img src="./img/header_logo.svg">
+            </a>
+            <nav class="nav header--nav">
+                <a href="./about_us.html">About Us</a>
+                <a href="./rooms.html">Rooms</a>
+                <a href="./offers.html">Offers</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <div class="header_buttons">
+                <button class="header_buttons--user">
+                    <img src="img/user.svg" alt="user icon">
+                </button>
+                <button class="header_buttons--search">
+                    <img src="img/magnifying glass.svg" alt="magnifying glass icon">
+                </button>
+            </div>
         </div>
     </header>
-    <nav class="nav deploy_nav--non_active">
+    <nav class="nav deploy_nav--non_active" id="deployNav">
         <a>About Us</a>
         <a href="./rooms.html">Rooms</a>
         <a href="./offers.html">Offers</a>

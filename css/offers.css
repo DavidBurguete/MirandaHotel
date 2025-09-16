@@ -61,6 +61,9 @@ nav.deploy_nav--active {
 nav.deploy_nav--non_active {
   transform: scaleY(0);
 }
+nav.header--nav {
+  display: none;
+}
 nav a {
   color: #111111;
   font-family: "Archivo";
@@ -81,13 +84,44 @@ nav a {
     padding: 0;
   }
   nav.deploy_nav--active, nav.deploy_nav--non_active {
-    transform: scale(1);
+    display: none;
+  }
+  nav.header--nav {
+    display: flex;
+    position: relative;
+    width: 40%;
+    left: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: none;
+    z-index: 12;
+  }
+  nav.header--nav a {
+    display: inline-block;
+    margin: 0 auto;
+    height: 100%;
+    width: 25%;
+    align-content: center;
   }
   nav a {
     text-align: center;
   }
 }
-header {
+@media screen and (min-width: 1051px) {
+  nav.header--nav {
+    left: 3rem;
+  }
+}
+.pc_header {
+  display: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  color: white;
+}
+
+.header--wrapper {
   display: flex;
   flex-direction: row;
   position: sticky;
@@ -103,6 +137,7 @@ header {
   font-family: "Archivo";
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 2.6px;
   color: #111111;
 }
@@ -110,7 +145,7 @@ header {
   align-self: center;
   order: 2;
   font-size: 0.8rem;
-  width: 4rem;
+  width: 8.5rem;
   margin-left: 1rem;
 }
 .logo h1 span {
@@ -134,6 +169,13 @@ header {
   margin-right: 1.4rem;
   line-height: 0;
 }
+@media screen and (min-width: 1000px) {
+  .header_buttons--user {
+    margin: 0.4375rem 0 0.4375rem 1.25rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(133, 133, 133, 0.3019607843);
+  }
+}
 
 .header_buttons--search {
   background-color: transparent;
@@ -142,7 +184,55 @@ header {
   margin-right: 1.4rem;
   line-height: 0;
 }
+@media screen and (min-width: 1000px) {
+  .header_buttons--search {
+    margin: 0.4375rem 0 0.4375rem 1.25rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(133, 133, 133, 0.3019607843);
+  }
+}
 
+@media screen and (min-width: 1000px) {
+  header {
+    position: relative;
+    background-color: #222222;
+    height: 6.25rem;
+  }
+  .pc_header {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0.6875rem 0;
+    width: 74%;
+  }
+  .header--wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 1.25rem;
+    width: 74%;
+    height: 7.5rem;
+    box-shadow: none;
+  }
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+  .logo img {
+    order: 1;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+  }
+  .header_buttons {
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .header_buttons {
+    position: relative;
+    right: 10%;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -431,6 +521,9 @@ nav.deploy_nav--active {
 nav.deploy_nav--non_active {
   transform: scaleY(0);
 }
+nav.header--nav {
+  display: none;
+}
 nav a {
   color: #111111;
   font-family: "Archivo";
@@ -451,13 +544,44 @@ nav a {
     padding: 0;
   }
   nav.deploy_nav--active, nav.deploy_nav--non_active {
-    transform: scale(1);
+    display: none;
+  }
+  nav.header--nav {
+    display: flex;
+    position: relative;
+    width: 40%;
+    left: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: none;
+    z-index: 12;
+  }
+  nav.header--nav a {
+    display: inline-block;
+    margin: 0 auto;
+    height: 100%;
+    width: 25%;
+    align-content: center;
   }
   nav a {
     text-align: center;
   }
 }
-header {
+@media screen and (min-width: 1051px) {
+  nav.header--nav {
+    left: 3rem;
+  }
+}
+.pc_header {
+  display: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  color: white;
+}
+
+.header--wrapper {
   display: flex;
   flex-direction: row;
   position: sticky;
@@ -473,6 +597,7 @@ header {
   font-family: "Archivo";
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 2.6px;
   color: #111111;
 }
@@ -480,7 +605,7 @@ header {
   align-self: center;
   order: 2;
   font-size: 0.8rem;
-  width: 4rem;
+  width: 8.5rem;
   margin-left: 1rem;
 }
 .logo h1 span {
@@ -504,6 +629,13 @@ header {
   margin-right: 1.4rem;
   line-height: 0;
 }
+@media screen and (min-width: 1000px) {
+  .header_buttons--user {
+    margin: 0.4375rem 0 0.4375rem 1.25rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(133, 133, 133, 0.3019607843);
+  }
+}
 
 .header_buttons--search {
   background-color: transparent;
@@ -512,7 +644,55 @@ header {
   margin-right: 1.4rem;
   line-height: 0;
 }
+@media screen and (min-width: 1000px) {
+  .header_buttons--search {
+    margin: 0.4375rem 0 0.4375rem 1.25rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(133, 133, 133, 0.3019607843);
+  }
+}
 
+@media screen and (min-width: 1000px) {
+  header {
+    position: relative;
+    background-color: #222222;
+    height: 6.25rem;
+  }
+  .pc_header {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0.6875rem 0;
+    width: 74%;
+  }
+  .header--wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 1.25rem;
+    width: 74%;
+    height: 7.5rem;
+    box-shadow: none;
+  }
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+  .logo img {
+    order: 1;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+  }
+  .header_buttons {
+    position: relative;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .header_buttons {
+    position: relative;
+    right: 10%;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;

@@ -20,6 +20,10 @@ nav{
         transform: scaleY(0.0);
     }
 
+    &.header--nav{
+        display: none;
+    }
+
     a{
         color: #111111;
         font-family: "Archivo";
@@ -41,11 +45,40 @@ nav{
         padding: 0;
 
         &.deploy_nav--active, &.deploy_nav--non_active{
-            transform: scale(1.0);
+            display: none;
+        }
+
+        &.header--nav{
+            display: flex;
+            position: relative;
+            width: 40%;
+            left: 0;
+            padding: 0;
+            background-color: white;
+            box-shadow: none;
+            z-index: 12;
+
+            a{
+                display: inline-block;
+                margin: 0 auto;
+                height: 100%;
+                width: 25%;
+                align-content: center;
+            }
         }
 
         a{
             text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1051px) {
+    
+    nav{
+
+        &.header--nav{
+            left: 3rem;
         }
     }
 }
