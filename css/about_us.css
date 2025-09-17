@@ -42,7 +42,7 @@
   }
 }
 nav {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -493,6 +493,65 @@ button, input[type=submit] {
   color: #BEAD8E;
 }
 
+@media screen and (min-width: 1000px) {
+  .main__header {
+    height: 22rem;
+  }
+  .main__header__bg_color {
+    height: 22rem;
+  }
+  .main__header__text {
+    position: relative;
+    left: 20%;
+    top: 6.5rem;
+    width: 50%;
+  }
+  .main__header__text--details {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -2.16px;
+  }
+  .main__header--index {
+    height: 43.75rem;
+  }
+  .main__header--index__bg_color {
+    height: 43.75rem;
+  }
+  .main__header--index__text {
+    padding-bottom: 2rem;
+  }
+  .main__header--index__text--luxury {
+    margin-bottom: 1.25rem;
+    font-family: "Archivo";
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+  }
+  .main__header--index__text--details {
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 7.5rem;
+    line-height: 8.125rem;
+    letter-spacing: -3.6px;
+  }
+  .main__header--index__buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 6.5rem;
+    left: 20%;
+  }
+  .main__header--index__buttons button {
+    margin: 0 auto;
+    width: 13.5rem;
+  }
+  .breadcrumbs {
+    right: 20%;
+    padding: 1.25rem 2.5rem;
+  }
+}
 .video {
   margin: 3.75rem 1.25rem;
   width: calc(100% - 2.5rem);

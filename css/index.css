@@ -42,7 +42,7 @@
   }
 }
 nav {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -435,7 +435,7 @@ button, input[type=submit] {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.main__header__text--details {
+.main__header__text--details, .main__header__text--details > pre {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
@@ -493,6 +493,57 @@ button, input[type=submit] {
   color: #BEAD8E;
 }
 
+@media screen and (min-width: 1000px) {
+  .main__header {
+    height: 22rem;
+  }
+  .main__header__bg_color {
+    height: 22rem;
+  }
+  .main__header__text {
+    position: relative;
+    left: 20%;
+    top: 6.5rem;
+    width: 50%;
+  }
+  .main__header__text--details {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -2.16px;
+  }
+  .main__header--index {
+    height: 43.75rem;
+  }
+  .main__header--index__bg_color {
+    height: 43.75rem;
+  }
+  .main__header--index__text {
+    padding-bottom: 2rem;
+  }
+  .main__header--index__text--luxury {
+    font-size: 0.875rem;
+  }
+  .main__header--index__text--details, .main__header--index__text--details > pre {
+    font-size: 7.5rem;
+    line-height: 8.125rem;
+    letter-spacing: -3.6px;
+  }
+  .main__header--index__buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 6.5rem;
+    left: 20%;
+  }
+  .main__header--index__buttons button {
+    margin: 0 1.875rem 0 0;
+    width: 13.5rem;
+  }
+  .breadcrumbs {
+    right: 20%;
+    padding: 1.25rem 2.5rem;
+  }
+}
 .main__availability, .main__arrival {
   padding: 2.5rem;
 }
@@ -601,7 +652,7 @@ button, input[type=submit] {
   }
 }
 nav {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -994,7 +1045,7 @@ button, input[type=submit] {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.main__header__text--details {
+.main__header__text--details, .main__header__text--details > pre {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
@@ -1052,6 +1103,57 @@ button, input[type=submit] {
   color: #BEAD8E;
 }
 
+@media screen and (min-width: 1000px) {
+  .main__header {
+    height: 22rem;
+  }
+  .main__header__bg_color {
+    height: 22rem;
+  }
+  .main__header__text {
+    position: relative;
+    left: 20%;
+    top: 6.5rem;
+    width: 50%;
+  }
+  .main__header__text--details {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -2.16px;
+  }
+  .main__header--index {
+    height: 43.75rem;
+  }
+  .main__header--index__bg_color {
+    height: 43.75rem;
+  }
+  .main__header--index__text {
+    padding-bottom: 2rem;
+  }
+  .main__header--index__text--luxury {
+    font-size: 0.875rem;
+  }
+  .main__header--index__text--details, .main__header--index__text--details > pre {
+    font-size: 7.5rem;
+    line-height: 8.125rem;
+    letter-spacing: -3.6px;
+  }
+  .main__header--index__buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 6.5rem;
+    left: 20%;
+  }
+  .main__header--index__buttons button {
+    margin: 0 1.875rem 0 0;
+    width: 13.5rem;
+  }
+  .breadcrumbs {
+    right: 20%;
+    padding: 1.25rem 2.5rem;
+  }
+}
 .swiper_complete .swiper-pagination, .swiper_only_pagination .swiper-pagination {
   bottom: 0;
 }
@@ -1571,6 +1673,37 @@ button, input[type=submit] {
   font-size: 1rem;
   line-height: 136%;
   color: #999999;
+}
+
+@media screen and (min-width: 1000px) {
+  .main__arrival form {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .main__arrival form label {
+    width: 30%;
+    margin-right: 1.875rem;
+  }
+  .main__arrival form label input {
+    padding-block: 0.875rem;
+    padding-left: 1.5rem;
+    border-bottom: 2px solid #BEAD8E;
+    background-color: transparent;
+    font-family: "Roboto";
+  }
+  .main__arrival form label .input_background_image {
+    background-position-x: left;
+  }
+  .main__arrival form label .input_background_image__calendar {
+    background-image: url("../img/calendar_dark.svg");
+  }
+  .main__arrival form input[type=submit] {
+    margin-left: auto;
+    margin-block: 1.25rem;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

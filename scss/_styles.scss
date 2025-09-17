@@ -43,7 +43,7 @@ button, input[type=submit]{
             text-transform: uppercase;
         }
         
-        &--details{
+        &--details, &--details>pre{
             font-family: "Old Standard TT";
             font-weight: 400;
             font-size: 3.5rem;
@@ -84,5 +84,68 @@ button, input[type=submit]{
 
     span{
         color: $miranda_main_color;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main__header{
+        height: 22rem;
+
+        &__bg_color{
+            height: 22rem;
+        }
+
+        &__text{
+            position: relative;
+            left: 20%;
+            top: 6.5rem;
+            width: 50%;
+            
+            &--details{
+                font-size: 4.5rem;
+                line-height: 4.5rem;
+                letter-spacing: -2.16px;
+            }
+        }
+
+        &--index{
+            height: 43.75rem;
+
+            &__bg_color{
+                height: 43.75rem;
+            }
+
+            &__text{
+                padding-bottom: 2rem;
+
+                &--luxury{
+                    font-size: 0.875rem;
+                }
+                
+                &--details, &--details>pre{
+                    font-size: 7.5rem;
+                    line-height: 8.125rem;
+                    letter-spacing: -3.6px;
+                }
+            }
+
+            &__buttons{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                top: 6.5rem;
+                left: 20%;
+
+                button{
+                    margin: 0 1.875rem 0 0;
+                    width: 13.5rem;
+                }
+            }
+        }
+    }
+
+    .breadcrumbs{
+        right: 20%;
+        padding: 1.25rem 2.5rem;
     }
 }
