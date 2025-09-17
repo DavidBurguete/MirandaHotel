@@ -435,7 +435,7 @@ button, input[type=submit] {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.main__header__text--details {
+.main__header__text--details, .main__header__text--details > pre {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
@@ -521,17 +521,9 @@ button, input[type=submit] {
     padding-bottom: 2rem;
   }
   .main__header--index__text--luxury {
-    margin-bottom: 1.25rem;
-    font-family: "Archivo";
-    font-weight: 700;
     font-size: 0.875rem;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
   }
-  .main__header--index__text--details {
-    font-family: "Old Standard TT";
-    font-weight: 400;
+  .main__header--index__text--details, .main__header--index__text--details > pre {
     font-size: 7.5rem;
     line-height: 8.125rem;
     letter-spacing: -3.6px;
@@ -544,7 +536,7 @@ button, input[type=submit] {
     left: 20%;
   }
   .main__header--index__buttons button {
-    margin: 0 auto;
+    margin: 0 1.875rem 0 0;
     width: 13.5rem;
   }
   .breadcrumbs {
@@ -559,6 +551,7 @@ button, input[type=submit] {
   position: relative;
   display: flex;
   padding-block: 3.25rem;
+  width: auto;
 }
 .contact__card img {
   align-self: flex-start;
@@ -575,8 +568,9 @@ button, input[type=submit] {
 }
 .contact__card__text > :nth-child(n) {
   margin-bottom: 0.5rem;
+  font-family: "Roboto";
 }
-.contact__card_text > :first-child {
+.contact__card__text > :first-child {
   margin-bottom: 1.25rem;
   font-family: "Old Standard TT";
   font-size: 1.25rem;
@@ -639,7 +633,7 @@ form #subject {
 form #message {
   width: 100%;
   background-repeat: no-repeat;
-  background-position-y: 1.625;
+  background-position-y: 1.625rem;
   background-position-x: 1.25rem;
   background-image: url("../img/message.svg");
   resize: none;
@@ -657,6 +651,55 @@ form input[type=submit] {
   text-transform: uppercase;
   color: white;
   margin: 3.75 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 0 auto;
+    height: 15rem;
+  }
+  .contact__card {
+    width: 30%;
+  }
+  .contact__card__text {
+    position: relative;
+    left: 1.6875rem;
+    width: 20%;
+  }
+  .contact__card__number {
+    position: relative;
+    bottom: 1rem;
+    margin: 0;
+    text-align: right;
+    z-index: -1;
+  }
+  iframe {
+    position: relative;
+    width: 60%;
+    height: 43.75rem;
+    left: 20%;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+  }
+  form label:not([for=message]) {
+    width: 48%;
+  }
+  form label[for=message] {
+    width: 100%;
+  }
+  form input[type=submit] {
+    max-width: 15%;
+    margin: 0 auto 7.5rem auto;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */
