@@ -112,7 +112,7 @@ nav a {
     left: 3rem;
   }
 }
-.pc_header {
+.desktop_header {
   display: none;
   font-family: "Roboto";
   font-weight: 400;
@@ -198,7 +198,7 @@ nav a {
     background-color: #222222;
     height: 6.25rem;
   }
-  .pc_header {
+  .desktop_header {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -435,7 +435,7 @@ button, input[type=submit] {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.main__header__text--details {
+.main__header__text--details, .main__header__text--details > pre {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
@@ -521,17 +521,9 @@ button, input[type=submit] {
     padding-bottom: 2rem;
   }
   .main__header--index__text--luxury {
-    margin-bottom: 1.25rem;
-    font-family: "Archivo";
-    font-weight: 700;
     font-size: 0.875rem;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
   }
-  .main__header--index__text--details {
-    font-family: "Old Standard TT";
-    font-weight: 400;
+  .main__header--index__text--details, .main__header--index__text--details > pre {
     font-size: 7.5rem;
     line-height: 8.125rem;
     letter-spacing: -3.6px;
@@ -544,7 +536,7 @@ button, input[type=submit] {
     left: 20%;
   }
   .main__header--index__buttons button {
-    margin: 0 auto;
+    margin: 0 1.875rem 0 0;
     width: 13.5rem;
   }
   .breadcrumbs {
@@ -666,7 +658,7 @@ nav a {
     left: 3rem;
   }
 }
-.pc_header {
+.desktop_header {
   display: none;
   font-family: "Roboto";
   font-weight: 400;
@@ -752,7 +744,7 @@ nav a {
     background-color: #222222;
     height: 6.25rem;
   }
-  .pc_header {
+  .desktop_header {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -989,7 +981,7 @@ button, input[type=submit] {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.main__header__text--details {
+.main__header__text--details, .main__header__text--details > pre {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
@@ -1075,17 +1067,9 @@ button, input[type=submit] {
     padding-bottom: 2rem;
   }
   .main__header--index__text--luxury {
-    margin-bottom: 1.25rem;
-    font-family: "Archivo";
-    font-weight: 700;
     font-size: 0.875rem;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
   }
-  .main__header--index__text--details {
-    font-family: "Old Standard TT";
-    font-weight: 400;
+  .main__header--index__text--details, .main__header--index__text--details > pre {
     font-size: 7.5rem;
     line-height: 8.125rem;
     letter-spacing: -3.6px;
@@ -1098,7 +1082,7 @@ button, input[type=submit] {
     left: 20%;
   }
   .main__header--index__buttons button {
-    margin: 0 auto;
+    margin: 0 1.875rem 0 0;
     width: 13.5rem;
   }
   .breadcrumbs {
@@ -1281,7 +1265,7 @@ button, input[type=submit] {
 .offer__card__room--price--actual span {
   font-size: 0.75rem;
 }
-.offer__card__type {
+.offer__card__container__type {
   padding: 0.625rem 1.25rem;
   font-family: "Archivo";
   font-weight: 0.9375rem;
@@ -1291,7 +1275,7 @@ button, input[type=submit] {
   text-transform: uppercase;
   color: #777777;
 }
-.offer__card__name {
+.offer__card__container__name {
   padding: 0.625rem 1.25rem;
   width: 85%;
   font-family: "Old Standard TT";
@@ -1301,21 +1285,24 @@ button, input[type=submit] {
   letter-spacing: -1.44px;
   color: #222222;
 }
-.offer__card__description {
-  margin: 1.25rem;
+.offer__card__container hr {
+  display: none;
+}
+.offer__card__container__description {
+  padding: 1.25rem;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: #777777;
 }
-.offer__card__amenities {
+.offer__card__container__amenities {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1.25rem;
+  padding: 1.25rem;
 }
-.offer__card__amenities h3 {
+.offer__card__container__amenities h3 {
   width: 100%;
   margin-bottom: 2.5rem;
   font-family: "Old Standard TT";
@@ -1324,15 +1311,15 @@ button, input[type=submit] {
   line-height: 1.875rem;
   color: #222222;
 }
-.offer__card__amenities__amenitie {
+.offer__card__container__amenities__amenitie {
   display: flex;
   width: 50%;
   padding-block: 0.625rem;
 }
-.offer__card__amenities__amenitie img {
+.offer__card__container__amenities__amenitie img {
   width: 16px;
 }
-.offer__card__amenities__amenitie p {
+.offer__card__container__amenities__amenitie p {
   padding: 0.25rem;
   font-family: "Roboto";
   font-weight: 500;
@@ -1340,7 +1327,7 @@ button, input[type=submit] {
   line-height: 100%;
   color: #777777;
 }
-.offer__card__book {
+.offer__card__container__book {
   width: 70%;
   padding: 1.25rem;
   border: none;
@@ -1380,6 +1367,73 @@ button, input[type=submit] {
   letter-spacing: -0.8px;
   text-align: center;
   color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  .main__header {
+    margin-bottom: 3rem;
+  }
+  .offer__card {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .offer__card__room {
+    padding-top: 0;
+  }
+  .offer__card__room--price {
+    bottom: -3rem;
+    right: 5%;
+    z-index: 2;
+  }
+  .offer__card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+    bottom: 4.25rem;
+    border-top: 6px solid #BDAC8D;
+    background-color: white;
+  }
+  .offer__card__container hr {
+    display: block;
+    width: 100%;
+    border: 1px solid #ECECEC;
+  }
+  .offer__card__container__description {
+    width: 45%;
+    padding-top: 1.875rem;
+  }
+  .offer__card__container__amenities {
+    width: 50%;
+  }
+  .offer__card__container__book {
+    max-width: 25%;
+  }
+  .offer__popular_rooms--list {
+    margin-bottom: 5.25rem;
+  }
+  .offer__popular_rooms--room {
+    margin-bottom: 5rem;
+    font-size: 5rem;
+  }
+  .popular {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .popular__wrapper {
+    display: flex;
+    margin-bottom: 7rem;
+    padding-bottom: 7rem;
+  }
+  .popular__wrapper__slide {
+    width: 33%;
+  }
+  .popular--no_display_desktop {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=offers.css.map */

@@ -49,77 +49,84 @@
         }
     }
 
-    &__type{
-        padding: 0.625rem 1.25rem;
-        font-family: "Archivo";
-        font-weight: 0.9375rem;
-        font-size: 0.875rem;
-        line-height: 100%;
-        letter-spacing: 2.8px;
-        text-transform: uppercase;
-        color: $miranda_gray;
-    }
-    
-    &__name{
-        padding: 0.625rem 1.25rem;
-        width: 85%;
-        font-family: "Old Standard TT";
-        font-weight: 400;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        letter-spacing: -1.44px;
-        color: $miranda_black;
-    }
-    
-    &__description{
-        margin: 1.25rem;
-        font-family: "Roboto";
-        font-weight: 400;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $miranda_gray;
-    }
-    
-    &__amenities{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 1.25rem;
-    
-        h3{
-            width: 100%;
-            margin-bottom: 2.5rem;
+    &__container{
+
+        &__type{
+            padding: 0.625rem 1.25rem;
+            font-family: "Archivo";
+            font-weight: 0.9375rem;
+            font-size: 0.875rem;
+            line-height: 100%;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: $miranda_gray;
+        }
+        
+        &__name{
+            padding: 0.625rem 1.25rem;
+            width: 85%;
             font-family: "Old Standard TT";
             font-weight: 400;
-            font-size: 1.875rem;
-            line-height: 1.875rem;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            letter-spacing: -1.44px;
             color: $miranda_black;
         }
 
-        &__amenitie{
+        hr{
+            display: none;
+        }
+        
+        &__description{
+            padding: 1.25rem;
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: $miranda_gray;
+        }
+        
+        &__amenities{
             display: flex;
-            width: 50%;
-            padding-block: 0.625rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1.25rem;
         
-            img{
-                width: 16px;
+            h3{
+                width: 100%;
+                margin-bottom: 2.5rem;
+                font-family: "Old Standard TT";
+                font-weight: 400;
+                font-size: 1.875rem;
+                line-height: 1.875rem;
+                color: $miranda_black;
             }
-        
-            p{
-                padding: 0.25rem;
-                font-family: "Roboto";
-                font-weight: 500;
-                font-size: 0.9375rem;
-                line-height: 100%;
-                color: $miranda_gray;
+
+            &__amenitie{
+                display: flex;
+                width: 50%;
+                padding-block: 0.625rem;
+            
+                img{
+                    width: 16px;
+                }
+            
+                p{
+                    padding: 0.25rem;
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 0.9375rem;
+                    line-height: 100%;
+                    color: $miranda_gray;
+                }
             }
         }
-    }
 
-    &__book{
-        @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
-        margin-inline: 1.25rem;
-        margin-bottom: 2.5rem;
+        &__book{
+            @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+            margin-inline: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
     }
 }
 
@@ -148,5 +155,89 @@
         letter-spacing: -0.8px;
         text-align: center;
         color: white;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main__header{
+        margin-bottom: 3rem;
+    }
+    
+    .offer__card{
+        width: 60%;
+        margin: 0 auto;
+
+        &__room{
+            padding-top: 0;
+
+            &--price{
+                bottom: -3rem;
+                right: 5%;
+                z-index: 2;
+            }
+        }
+
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem 2rem 0 2rem;
+            bottom: 4.25rem;
+            border-top: 6px solid #BDAC8D;
+            background-color: white;
+
+            hr{
+                display: block;
+                width: 100%;
+                border: 1px solid #ECECEC;
+            }
+            
+            &__description{
+                width: 45%;
+                padding-top: 1.875rem;
+            }
+            
+            &__amenities{
+                width: 50%;
+            }
+
+            &__book{
+                max-width: 25%;
+            }
+        }
+    }
+
+    .offer__popular_rooms{
+
+        &--list{
+            margin-bottom: 5.25rem;
+        }
+
+        &--room{
+            margin-bottom: 5rem;
+            font-size: 5rem;
+        }
+    }
+
+    .popular{
+        width: 60%;
+        margin: 0 auto;
+
+        &__wrapper{
+            display: flex;
+            margin-bottom: 7rem;
+            padding-bottom: 7rem;
+
+            &__slide{
+                width: 33%;
+            }
+        }
+    }
+    
+    .popular--no_display_desktop{
+        display: none;
     }
 }

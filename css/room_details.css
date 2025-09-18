@@ -112,7 +112,7 @@ nav a {
     left: 3rem;
   }
 }
-.pc_header {
+.desktop_header {
   display: none;
   font-family: "Roboto";
   font-weight: 400;
@@ -198,7 +198,7 @@ nav a {
     background-color: #222222;
     height: 6.25rem;
   }
-  .pc_header {
+  .desktop_header {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -666,7 +666,7 @@ nav a {
     left: 3rem;
   }
 }
-.pc_header {
+.desktop_header {
   display: none;
   font-family: "Roboto";
   font-weight: 400;
@@ -752,7 +752,7 @@ nav a {
     background-color: #222222;
     height: 6.25rem;
   }
-  .pc_header {
+  .desktop_header {
     display: block;
     position: relative;
     margin: 0 auto;
