@@ -420,6 +420,54 @@
     }
 }
 
+@media screen and (min-width:1000px) {
+    .place{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6.75rem;
+        position: relative;
+        padding: 7.5rem 20%;
+
+        &__second_panel{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: 100%;
+            background-color: #AD9D82;
+        }
+
+        &__name{
+            grid-column: 1;
+        }
+
+        &__title{
+            grid-column: 1;
+            font-size: 5rem;
+            line-height: 5.25rem;
+            letter-spacing: -2.4px;
+        }
+
+        &__description{
+            grid-column: 1;
+        }
+
+        .video{
+            grid-column: 2 / 3;
+            grid-row: 1 / 5;
+            height: 100%;
+            margin: 0;
+            z-index: 1;
+        }
+
+        &__book{
+            grid-column: 1;
+            margin-top: 2rem;
+            @include miranda-button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+        }
+    }
+}
+
 .features{
     padding: 1.25rem;
 
