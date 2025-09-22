@@ -304,6 +304,10 @@
         &__type{
             margin-top: 1.25rem;
         }
+
+        span{
+            font-size: 2rem;
+        }
     }
 }
 
@@ -363,7 +367,7 @@
         }
     }
 
-    .custom-button-prev--only_navigation, .custom-button-next--only_navigation{
+    .swiper .custom-button-prev--only_navigation, .swiper .custom-button-next--only_navigation{
         top: 25%;
         width: 5rem;
         height: 5rem;
@@ -493,7 +497,7 @@
         text-align: center;
     }
 
-    &__card{
+    &__main__card{
         position: relative;
         padding: 4.5rem 1.125rem 3rem 1.125rem;
 
@@ -528,6 +532,61 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+
+    .features{
+        margin-top: 7.5rem;
+
+        &__description{
+            margin-block: 2.5rem;
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: -2.4px;
+        }
+
+        &__main{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 60%;
+            margin: 0 auto;
+
+            &__card{
+                position: relative;
+                padding: 4.5rem 1.5rem 3rem 1.5rem;
+
+                &__number{
+                    position: absolute;
+                    top: -0.5rem;
+                    right: 0.75rem;
+                    font-family: "Archivo";
+                    font-weight: 700;
+                    font-size: 7.5rem;
+                    line-height: 8.125rem;
+                    color: rgba($color: $miranda_black, $alpha: 0.04);
+                }
+
+                &__title{
+                    margin-block: 1.5rem;
+                    font-family: "Old Standard TT";
+                    font-weight: 400;
+                    font-size: 1.875rem;
+                    line-height: 1.875rem;
+                    letter-spacing: -0.9px;
+                    color: $miranda_black;
+                }
+
+                &__description{
+                    font-family: "Archivo";
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 1.5rem;
+                    color: $miranda_gray;
+                }
+            }
+        }
+    }
+}
+
 .swiper_complete .swiper-pagination-bullet, .swiper_only_pagination .swiper-pagination-bullet{
     background: #EDEDED;
     opacity: 1;
@@ -542,8 +601,12 @@
     padding: 3.5rem 1.25rem;
 
     &__icon{
-        position: relative;
-        left: calc(100% - 5.5625rem + 1.25rem);
+        display: none;
+
+        &--cropped{
+            position: relative;
+            left: calc(100% - 5.5625rem + 1.25rem);
+        }
     }
 
     &__name{
@@ -575,6 +638,9 @@
         }
 
         &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             margin-left: 2rem;
 
             &__name{
@@ -597,37 +663,130 @@
     }
 }
 
-.swiper-slide{
-    margin-bottom: 2rem;
+@media screen and (min-width: 1000px) {
+    .menu{
+        width: 60%;
+        margin: 0 auto;
+
+        &__icon{
+            display: block;
+            position: relative;
+            top: 2.375rem;
+            right: 30%;
+            width: 14.25rem;
+            z-index: -1;
+
+            &--cropped{
+                display: none;
+            }
+        }
+
+        &__title{
+            font-size: 5rem;
+            line-height: 100%;
+            letter-spacing: -2.4px;
+        }
+
+        &__card{
+            &:hover{
+                transition: 150ms ease-in-out;
+                background-color: $miranda_black;
+                color: white;
+
+                &__text{
+                    &__name{
+                        color: white;
+                    }
+
+                    &__description{
+                        color: white;
+                    }
+                }
+            }
+
+            &__text{
+                margin: 1.25rem 2rem;
+
+                &__description{
+                    width: 75%;
+                }
+            }
+        }
+    }
 }
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next{
-    top: auto;
-    bottom: 0;
-    width: 2rem;
-    height: 2rem;
-    z-index: 3;
+.menu{
+
+    .swiper-button-prev, .swiper-button-next{
+        top: auto;
+        bottom: 0;
+        width: 2rem;
+        height: 2rem;
+        z-index: 3;
+    }
+
+    .swiper-button-prev::after, .swiper-button-next::after{
+        content: none;
+    }
+
+    .swiper-button-prev{
+        color: #111111;
+        background-color: $miranda_white;
+        left: auto;
+        right: 4rem;
+    }
+
+    .swiper-button-next{
+        color: white;
+        background-color: $miranda_main_color;
+        right: 1rem;
+    }
 }
 
-.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after{
-    content: none;
+@media screen and (min-width: 1000px) {
+    .menu{
+        .swiper-button-prev, .swiper-button-next{
+            position: absolute;
+            top: 10rem;
+            width: 4.375rem;
+            height: 4.375rem;
+            z-index: 99;
+        }
+
+        .swiper-button-prev{
+            right: 6.5rem;
+        }
+    }
 }
 
-.swiper .swiper-button-prev{
-    color: #111111;
-    background-color: white;
-    left: auto;
-    right: 4rem;
+.menu_pictures{
+        
+    .swiper-slide{
+        margin-bottom: 2rem;
+    }
+
+    &__images__image{
+        padding: 1.25rem;
+    }
 }
 
-.swiper .swiper-button-next{
-    color: white;
-    background-color: $miranda_main_color;
-    right: 1rem;
-}
+@media screen and (min-width: 1000px) {
+    .menu_pictures{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 0 auto;
 
-.food_image{
-    padding: 1.25rem;
+        &__images{
+            justify-content: space-between;
+        
+            &__image{
+                width: 30%;
+                padding: 0;
+            }
+        }
+    }   
 }
 
 .info{
@@ -641,6 +800,7 @@
     }
 
     &__card{
+
         &__number{
             font-family: "Roboto";
             font-weight: 700;
@@ -661,6 +821,39 @@
             font-size: 1rem;
             line-height: 136%;
             color: #999999;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 60%;
+        margin: 3rem auto;
+        text-align: left;
+
+        &__card, &__card:not(:last-child){
+            max-width: 33%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        &__card{
+            &__number{
+                font-family: "Roboto";
+                font-weight: 700;
+                font-size: 3.75rem;
+                line-height: 136%;
+                color: white;
+
+                span{
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }

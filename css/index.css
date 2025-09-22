@@ -534,6 +534,7 @@ button, input[type=submit] {
     flex-direction: row;
     top: 6.5rem;
     left: 20%;
+    width: 50%;
   }
   .main__header--index__buttons button {
     margin: 0 1.875rem 0 0;
@@ -1144,6 +1145,7 @@ button, input[type=submit] {
     flex-direction: row;
     top: 6.5rem;
     left: 20%;
+    width: 50%;
   }
   .main__header--index__buttons button {
     margin: 0 1.875rem 0 0;
@@ -1207,7 +1209,7 @@ button, input[type=submit] {
   margin-right: 0.625rem;
 }
 
-.custom-button-prev--only_navigation, .custom-button-next--only_navigation {
+.swiper .custom-button-prev--only_navigation, .swiper .custom-button-next--only_navigation {
   top: 6.25rem;
   position: absolute;
   display: inline-flex;
@@ -1218,6 +1220,7 @@ button, input[type=submit] {
   width: 2rem;
   height: 2rem;
   line-height: 1.25rem;
+  cursor: pointer;
   z-index: 3;
 }
 
@@ -1560,6 +1563,9 @@ button, input[type=submit] {
 .room__card__bottom__type {
   margin-top: 1.25rem;
 }
+.room__card__bottom span {
+  font-size: 2rem;
+}
 
 @media screen and (min-width: 1000px) {
   .room__card__icons, .room__card__bottom {
@@ -1605,7 +1611,7 @@ button, input[type=submit] {
   .room__card__bottom__pricing span {
     font-size: 2.5rem;
   }
-  .custom-button-prev--only_navigation, .custom-button-next--only_navigation {
+  .swiper .custom-button-prev--only_navigation, .swiper .custom-button-next--only_navigation {
     top: 25%;
     width: 5rem;
     height: 5rem;
@@ -1738,11 +1744,11 @@ button, input[type=submit] {
   letter-spacing: -1.2px;
   text-align: center;
 }
-.features__card {
+.features__main__card {
   position: relative;
   padding: 4.5rem 1.125rem 3rem 1.125rem;
 }
-.features__card__number {
+.features__main__card__number {
   position: absolute;
   top: -0.5rem;
   right: 0.75rem;
@@ -1752,7 +1758,7 @@ button, input[type=submit] {
   line-height: 8.125rem;
   color: rgba(34, 34, 34, 0.04);
 }
-.features__card__title {
+.features__main__card__title {
   margin-block: 1.5rem;
   font-family: "Old Standard TT";
   font-weight: 400;
@@ -1761,7 +1767,7 @@ button, input[type=submit] {
   letter-spacing: -0.9px;
   color: #222222;
 }
-.features__card__description {
+.features__main__card__description {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 0.875rem;
@@ -1769,6 +1775,53 @@ button, input[type=submit] {
   color: #777777;
 }
 
+@media screen and (min-width: 1000px) {
+  .features {
+    margin-top: 7.5rem;
+  }
+  .features__description {
+    margin-block: 2.5rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -2.4px;
+  }
+  .features__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: 0 auto;
+  }
+  .features__main__card {
+    position: relative;
+    padding: 4.5rem 1.5rem 3rem 1.5rem;
+  }
+  .features__main__card__number {
+    position: absolute;
+    top: -0.5rem;
+    right: 0.75rem;
+    font-family: "Archivo";
+    font-weight: 700;
+    font-size: 7.5rem;
+    line-height: 8.125rem;
+    color: rgba(34, 34, 34, 0.04);
+  }
+  .features__main__card__title {
+    margin-block: 1.5rem;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    letter-spacing: -0.9px;
+    color: #222222;
+  }
+  .features__main__card__description {
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #777777;
+  }
+}
 .swiper_complete .swiper-pagination-bullet, .swiper_only_pagination .swiper-pagination-bullet {
   background: #EDEDED;
   opacity: 1;
@@ -1783,6 +1836,9 @@ button, input[type=submit] {
   padding: 3.5rem 1.25rem;
 }
 .menu__icon {
+  display: none;
+}
+.menu__icon--cropped {
   position: relative;
   left: calc(100% - 5.5625rem + 1.25rem);
 }
@@ -1812,6 +1868,9 @@ button, input[type=submit] {
   width: 7.5rem;
 }
 .menu__card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 2rem;
 }
 .menu__card__text__name {
@@ -1830,39 +1889,102 @@ button, input[type=submit] {
   color: #222222;
 }
 
-.swiper-slide {
-  margin-bottom: 2rem;
+@media screen and (min-width: 1000px) {
+  .menu {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .menu__icon {
+    display: block;
+    position: relative;
+    top: 2.375rem;
+    right: 30%;
+    width: 14.25rem;
+    z-index: -1;
+  }
+  .menu__icon--cropped {
+    display: none;
+  }
+  .menu__title {
+    font-size: 5rem;
+    line-height: 100%;
+    letter-spacing: -2.4px;
+  }
+  .menu__card:hover {
+    transition: 150ms ease-in-out;
+    background-color: #222222;
+    color: white;
+  }
+  .menu__card:hover__text__name {
+    color: white;
+  }
+  .menu__card:hover__text__description {
+    color: white;
+  }
+  .menu__card__text {
+    margin: 1.25rem 2rem;
+  }
+  .menu__card__text__description {
+    width: 75%;
+  }
 }
-
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
+.menu .swiper-button-prev, .menu .swiper-button-next {
   top: auto;
   bottom: 0;
   width: 2rem;
   height: 2rem;
   z-index: 3;
 }
-
-.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+.menu .swiper-button-prev::after, .menu .swiper-button-next::after {
   content: none;
 }
-
-.swiper .swiper-button-prev {
+.menu .swiper-button-prev {
   color: #111111;
-  background-color: white;
+  background-color: #F8F8F8;
   left: auto;
   right: 4rem;
 }
-
-.swiper .swiper-button-next {
+.menu .swiper-button-next {
   color: white;
   background-color: #BEAD8E;
   right: 1rem;
 }
 
-.food_image {
+@media screen and (min-width: 1000px) {
+  .menu .swiper-button-prev, .menu .swiper-button-next {
+    position: absolute;
+    top: 10rem;
+    width: 4.375rem;
+    height: 4.375rem;
+    z-index: 99;
+  }
+  .menu .swiper-button-prev {
+    right: 6.5rem;
+  }
+}
+.menu_pictures .swiper-slide {
+  margin-bottom: 2rem;
+}
+.menu_pictures__images__image {
   padding: 1.25rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .menu_pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .menu_pictures__images {
+    justify-content: space-between;
+  }
+  .menu_pictures__images__image {
+    width: 30%;
+    padding: 0;
+  }
+}
 .info {
   margin-block: 3rem;
   padding: 3rem 5.125rem;
@@ -1890,6 +2012,33 @@ button, input[type=submit] {
   font-size: 1rem;
   line-height: 136%;
   color: #999999;
+}
+
+@media screen and (min-width: 1000px) {
+  .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: 3rem auto;
+    text-align: left;
+  }
+  .info__card, .info__card:not(:last-child) {
+    max-width: 33%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .info__card__number {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 136%;
+    color: white;
+  }
+  .info__card__number span {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
