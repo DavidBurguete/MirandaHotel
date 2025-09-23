@@ -1915,11 +1915,13 @@ button, input[type=submit] {
     background-color: #222222;
     color: white;
   }
-  .menu__card:hover__text__name {
+  .menu__card:hover .menu__card__text__name {
     color: white;
+    transition: 150ms ease-in-out;
   }
-  .menu__card:hover__text__description {
+  .menu__card:hover .menu__card__text__description {
     color: white;
+    transition: 150ms ease-in-out;
   }
   .menu__card__text {
     margin: 1.25rem 2rem;

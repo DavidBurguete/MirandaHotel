@@ -693,13 +693,15 @@
                 background-color: $miranda_black;
                 color: white;
 
-                &__text{
+                .menu__card__text{
                     &__name{
                         color: white;
+                        transition: 150ms ease-in-out;
                     }
 
                     &__description{
                         color: white;
+                        transition: 150ms ease-in-out;
                     }
                 }
             }
