@@ -281,6 +281,22 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .main__cancellation{
+        position: relative;
+        left: 20%;
+        width: 45%;
+        margin: 5.375rem 0 0 0;
+        padding: 3rem;
+
+        hr{
+            width: 100%;
+            margin-block: 1rem 1.5rem;
+            border: 1px solid #F1F1F1;
+        }
+    }
+}
+
 .main__related_rooms--title{
     margin: 1.25rem;
     font-family: "Old Standard TT";
@@ -288,4 +304,34 @@
     font-size: 1.875rem;
     line-height: 1.875rem;
     color: $miranda_black;
+}
+
+@media screen and (min-width: 1000px) {
+    .main__related_rooms{
+        width: 60%;
+        margin: 0 auto;
+
+        &--title{
+            margin: 0;
+        }
+
+        hr{
+            width: 100%;
+            margin-block: 1rem 1.5rem;
+            border: 1px solid #F1F1F1;
+        }
+
+        &--wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+
+        &--card{
+            width: 33%;
+        }
+    }
+
+    .custom-button-prev--only_navigation, .custom-button-next--only_navigation{
+        display: none;
+    }
 }
