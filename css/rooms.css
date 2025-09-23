@@ -435,7 +435,7 @@ button, input[type=submit] {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.main__header__text--details {
+.main__header__text--details, .main__header__text--details > pre {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5rem;
@@ -521,17 +521,9 @@ button, input[type=submit] {
     padding-bottom: 2rem;
   }
   .main__header--index__text--luxury {
-    margin-bottom: 1.25rem;
-    font-family: "Archivo";
-    font-weight: 700;
     font-size: 0.875rem;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
   }
-  .main__header--index__text--details {
-    font-family: "Old Standard TT";
-    font-weight: 400;
+  .main__header--index__text--details, .main__header--index__text--details > pre {
     font-size: 7.5rem;
     line-height: 8.125rem;
     letter-spacing: -3.6px;
@@ -542,9 +534,10 @@ button, input[type=submit] {
     flex-direction: row;
     top: 6.5rem;
     left: 20%;
+    width: 50%;
   }
   .main__header--index__buttons button {
-    margin: 0 auto;
+    margin: 0 1.875rem 0 0;
     width: 13.5rem;
   }
   .breadcrumbs {
@@ -552,15 +545,19 @@ button, input[type=submit] {
     padding: 1.25rem 2.5rem;
   }
 }
-.swiper_complete .swiper-pagination, .swiper_only_pagination .swiper-pagination {
+.swiper_complete .swiper-pagination, .swiper-only-pagination .swiper-pagination {
   bottom: 0;
+}
+
+.swiper-only-pagination {
+  text-align: center;
 }
 
 .page-number,
 .swiper_complete .custom-button-prev--rooms,
 .swiper_complete .custom-button-next--rooms,
-.swiper_only_pagination .custom-button-prev--rooms,
-.swiper_only_pagination .custom-button-next--rooms {
+.swiper-only-pagination .custom-button-prev--rooms,
+.swiper-only-pagination .custom-button-next--rooms {
   background-color: transparent;
   border: none;
   display: inline-flex;
@@ -590,8 +587,8 @@ button, input[type=submit] {
 
 .swiper_complete .custom-button-prev--rooms,
 .swiper_complete .custom-button-next--rooms,
-.swiper_only_pagination .custom-button-prev--rooms,
-.swiper_only_pagination .custom-button-next--rooms {
+.swiper-only-pagination .custom-button-prev--rooms,
+.swiper-only-pagination .custom-button-next--rooms {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 1.25rem;
@@ -601,11 +598,11 @@ button, input[type=submit] {
   display: none;
 }
 
-.swiper_complete .custom-button-prev--rooms, .swiper_only_pagination .custom-button-prev--rooms {
+.swiper_complete .custom-button-prev--rooms, .swiper-only-pagination .custom-button-prev--rooms {
   margin-right: 0.625rem;
 }
 
-.custom-button-prev--only_navigation, .custom-button-next--only_navigation {
+.swiper .custom-button-prev--only_navigation, .swiper .custom-button-next--only_navigation {
   top: 6.25rem;
   position: absolute;
   display: inline-flex;
@@ -616,6 +613,7 @@ button, input[type=submit] {
   width: 2rem;
   height: 2rem;
   line-height: 1.25rem;
+  cursor: pointer;
   z-index: 3;
 }
 
@@ -687,6 +685,21 @@ button, input[type=submit] {
 }
 .room__card__bottom__pricing__book {
   color: #BDBDBD;
+}
+
+@media screen and (min-width: 1000px) {
+  .rooms {
+    width: 60%;
+    margin: 7rem auto;
+  }
+  .rooms--wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .room__card {
+    margin: 0 auto;
+    padding-right: 1rem;
+  }
 }
 
 /*# sourceMappingURL=rooms.css.map */

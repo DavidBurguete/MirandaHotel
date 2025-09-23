@@ -67,3 +67,20 @@
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .rooms{
+        width: 60%;
+        margin: 7rem auto;
+
+        &--wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .room__card{
+        margin: 0 auto;
+        padding-right: 1rem;
+    }
+}

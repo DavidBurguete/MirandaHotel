@@ -1092,15 +1092,19 @@ button, input[type=submit] {
     padding: 1.25rem 2.5rem;
   }
 }
-.swiper_complete .swiper-pagination, .swiper_only_pagination .swiper-pagination {
+.swiper_complete .swiper-pagination, .swiper-only-pagination .swiper-pagination {
   bottom: 0;
+}
+
+.swiper-only-pagination {
+  text-align: center;
 }
 
 .page-number,
 .swiper_complete .custom-button-prev--rooms,
 .swiper_complete .custom-button-next--rooms,
-.swiper_only_pagination .custom-button-prev--rooms,
-.swiper_only_pagination .custom-button-next--rooms {
+.swiper-only-pagination .custom-button-prev--rooms,
+.swiper-only-pagination .custom-button-next--rooms {
   background-color: transparent;
   border: none;
   display: inline-flex;
@@ -1130,8 +1134,8 @@ button, input[type=submit] {
 
 .swiper_complete .custom-button-prev--rooms,
 .swiper_complete .custom-button-next--rooms,
-.swiper_only_pagination .custom-button-prev--rooms,
-.swiper_only_pagination .custom-button-next--rooms {
+.swiper-only-pagination .custom-button-prev--rooms,
+.swiper-only-pagination .custom-button-next--rooms {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 1.25rem;
@@ -1141,7 +1145,7 @@ button, input[type=submit] {
   display: none;
 }
 
-.swiper_complete .custom-button-prev--rooms, .swiper_only_pagination .custom-button-prev--rooms {
+.swiper_complete .custom-button-prev--rooms, .swiper-only-pagination .custom-button-prev--rooms {
   margin-right: 0.625rem;
 }
 
@@ -1230,6 +1234,20 @@ button, input[type=submit] {
   color: #BDBDBD;
 }
 
+@media screen and (min-width: 1000px) {
+  .rooms {
+    width: 60%;
+    margin: 7rem auto;
+  }
+  .rooms--wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .room__card {
+    margin: 0 auto;
+    padding-right: 1rem;
+  }
+}
 .main__availability, .main__arrival {
   padding: 2.5rem;
 }
