@@ -60,6 +60,16 @@
             &__price{
                 color: $miranda_main_color;
             }
+
+            hr{
+                display: none;
+                position: relative;
+                align-self: flex-end;
+                width: 20%;
+                right: 0;
+                margin-block: 1rem 0.5rem;
+                border: 1px solid #F1F1F1;
+            }
             
             &__book{
                 color: #BDBDBD;
@@ -69,18 +79,112 @@
 }
 
 @media screen and (min-width: 1000px) {
+    
+    .room__card{
+        margin: 0 auto;
+        padding-right: 1rem;
+
+        &--list{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1.875rem;
+
+            img{
+                width: 50%;
+                height: 100%;
+                max-height: 19rem;
+            }
+
+            &__bottom{
+                position: relative;
+                padding: 1.5rem 0 1.5rem 2.5rem;
+                text-align: left;
+                background-color: white;
+
+                &__icons{
+                    display: flex;
+                    flex-direction: row;
+                    left: 0;
+                    bottom: 0;
+                    width: fit-content;
+                    height: 3rem;
+                    margin: 0 0.5rem 2.5rem 0;
+                    padding: 0.75rem 1.5rem;
+
+                    &>img{
+                        width: 1.875rem;
+                    }
+                }
+
+                &__icons>:not(:last-child){
+                    padding-right: 0;
+                }
+
+                &__type{
+                    width: 55%;
+                }
+                
+                &__description{
+                    width: 60%;
+                    margin-top: 1rem;
+                    padding: 0;
+                }
+                
+                &__pricing{
+                    flex-direction: column;
+                    position: absolute;
+                    margin: 0;
+                    width: auto;
+                    top: 35%;
+                    right: 0;
+                    text-align: right;
+                    
+                    &__price{
+
+                        span{
+                            font-size: 2.5rem;
+                        }
+                    }
+                    
+                    hr{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rooms__view{
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
     .rooms{
+        top: -5rem;
         width: 60%;
-        margin: 7rem auto;
+        margin: 0 auto 7rem auto;
+
+        &__view{
+            display: block;
+            position: sticky;
+            top: 7rem;
+            width: 15%;
+            height: 5rem;
+            margin: 7rem 0 0 2.5%;
+            padding: 1rem 0;
+            
+            font-family: "Archivo";
+            font-weight: 400;
+            font-size: 0.875rem;
+            background-color: $miranda_main_color;
+            color: $miranda_white;
+            border: 0;
+        }
 
         &--wrapper{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
         }
-    }
-
-    .room__card{
-        margin: 0 auto;
-        padding-right: 1rem;
     }
 }

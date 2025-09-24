@@ -1,9 +1,17 @@
 window.addEventListener("load", () => {
+    let view_changer = document.getElementById("change-view");
+    let is_grid = false;
+    let slidesPerGrid = 3;
+    let slidesPerList = 1;    
     let screen_width = window.screen.width;
-    let slide_amount = 1;
+    let slide_amount = slidesPerList;
+    let cards = document.querySelectorAll(".room__card");
     if(screen_width>1000){
-        slide_amount = 3;
+        slide_amount = slidesPerGrid;
+        is_grid = true;
     }
+
+
     const swiper = new Swiper('.swiper_only_pagination', {
         direction: 'horizontal',
         loop: false ,
@@ -87,6 +95,34 @@ window.addEventListener("load", () => {
                 }
             }
         }
+    });
+
+    let params = swiper.params;
+    view_changer.addEventListener("click", () => {
+        is_grid = !is_grid;
+        if(is_grid){
+            params.slidesPerView = slidesPerGrid;
+            cards.forEach(card => {
+                card.classList.remove("room__card--list");
+                let card_subclasses = card.querySelectorAll("[class*='--list']");
+                card_subclasses.forEach(card_subclass => {
+                    let class_to_remove = card_subclass.classList[1];
+                    card_subclass.classList.remove(class_to_remove);
+                });
+            });
+        }
+        else{
+            params.slidesPerView = slidesPerList;
+            cards.forEach(card => {
+                card.classList.add("room__card--list");
+                let card_subclasses = card.querySelectorAll("[class*='room']");
+                card_subclasses.forEach(card_subclass => {
+                    let class_breakdown = card_subclass.className.split("__card");
+                    card_subclass.classList.add(class_breakdown[0] + "__card--list" + class_breakdown[1]);
+                });
+            });
+        }
+        swiper.update();
     });
 
     swiper.on('slideChange', function () {

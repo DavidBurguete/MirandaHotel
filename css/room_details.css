@@ -410,6 +410,10 @@ button, input[type=submit] {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main__header {
   position: relative;
   background-image: url("../img/hotel-room-2.jpg");
@@ -957,6 +961,10 @@ button, input[type=submit] {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main__header {
   position: relative;
   background-image: url("../img/hotel-room-2.jpg");
@@ -1234,10 +1242,30 @@ button, input[type=submit] {
   color: #BDBDBD;
 }
 
+.rooms__view {
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
   .rooms {
+    top: -5rem;
     width: 60%;
-    margin: 7rem auto;
+    margin: 0 auto 7rem auto;
+  }
+  .rooms__view {
+    display: block;
+    position: sticky;
+    top: 7rem;
+    width: 15%;
+    height: 5rem;
+    margin: 7rem 0 0 2.5%;
+    padding: 1rem 0;
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 0.875rem;
+    background-color: #BEAD8E;
+    color: #F8F8F8;
+    border: 0;
   }
   .rooms--wrapper {
     display: grid;

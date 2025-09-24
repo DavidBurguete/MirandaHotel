@@ -16,6 +16,10 @@ button, input[type=submit]{
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main__header{
     position: relative;
     background-image: url("../img/hotel-room-2.jpg");
