@@ -5,6 +5,16 @@
     width: calc(100% - (1.25rem * 2));
 }
 
+@media screen and (min-width: 1000px) {
+    .video{
+        position: relative;
+        width: 60%;
+        height: 40rem;
+        margin: 7rem auto 3.75rem auto;
+        left: 20%;
+    }
+}
+
 .main__description{
     margin-block: -1rem 3.125rem;
     margin-inline: 1.25rem;
@@ -16,11 +26,21 @@
     color: $miranda_black;
 }
 
+@media screen and (min-width: 1000px) {
+    .main__description{
+        width: 60%;
+        margin: 0 auto 3rem auto;
+        font-size: 4.5rem;
+        letter-spacing: -2.16px;
+        text-align: center;
+    }
+}
+
 .main__availabilities{
     margin: 0 1.25rem 3.125rem 1.25rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &__card{
         display: flex;
@@ -30,6 +50,7 @@
         max-width: 10rem;
         width: 50%;
         height: 10rem;
+        margin-bottom: 1rem;
 
         &>*{
             margin: 0 auto;
@@ -56,6 +77,13 @@
         p{
             color: white;
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main__availabilities{
+        width: 60%;
+        margin: 0 auto 3.125rem auto;
     }
 }
 
@@ -104,6 +132,32 @@
             box-shadow: 0px 14px 24px 0px #BEAD8E5C;
         }
 
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .restaurant{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto 7.5rem auto;
+        padding: 2.625rem;
+        box-shadow: 0px 14px 24px 0px #B8B8B81A;
+
+        img{
+            align-self: center;
+            width: 50%;
+            height: fit-content;
+        }
+
+        &__text{
+            width: 45%;
+
+            &__look{
+                @include miranda_button($width: 50%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+            }
+        }
     }
 }
 
@@ -167,6 +221,29 @@
             font-size: 0.875rem;
             line-height: 1.5rem;
             color: white;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .features{
+        padding: 7.5rem 0;
+
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1.875rem;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        &__card{
+            padding: 2rem;
+
+            &__icon{
+                position: relative;
+                z-index: 2;
+            }
         }
     }
 }
@@ -249,5 +326,41 @@
 
     & .swiper_complete .swiper-pagination-bullet-active, & .swiper_only_pagination .swiper-pagination-bullet-active{
         background: $miranda_main_color;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .facts{
+        width: 60%;
+        margin: 5rem auto;
+
+        &__type{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__card{
+                width: 33%;
+                padding: 2rem;
+
+                &__icon{
+                    width: 4rem;
+                }
+
+                &__arrow{
+                    width: 2rem;
+                }
+            }
+        }
+
+        &__images{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            img{
+                width: 48%;
+            }
+        }
     }
 }
