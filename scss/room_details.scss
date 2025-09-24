@@ -263,6 +263,12 @@
 .main__cancellation{
     margin: 1.25rem;
 
+    hr{
+        width: 100%;
+        margin-block: 1rem 1.5rem;
+        border: 1px solid #F1F1F1;
+    }
+
     &__title{
         font-family: "Old Standard TT";
         font-weight: 400;
@@ -288,22 +294,25 @@
         width: 45%;
         margin: 5.375rem 0 0 0;
         padding: 3rem;
-
-        hr{
-            width: 100%;
-            margin-block: 1rem 1.5rem;
-            border: 1px solid #F1F1F1;
-        }
     }
 }
 
-.main__related_rooms--title{
-    margin: 1.25rem;
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-size: 1.875rem;
-    line-height: 1.875rem;
-    color: $miranda_black;
+.main__related_rooms{
+    
+    &--title{
+        margin: 1.25rem;
+        font-family: "Old Standard TT";
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        color: $miranda_black;
+    }
+
+    hr{
+        width: 100%;
+        margin-block: 1rem 1.5rem;
+        border: 1px solid #F1F1F1;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -313,12 +322,6 @@
 
         &--title{
             margin: 0;
-        }
-
-        hr{
-            width: 100%;
-            margin-block: 1rem 1.5rem;
-            border: 1px solid #F1F1F1;
         }
 
         &--wrapper{
