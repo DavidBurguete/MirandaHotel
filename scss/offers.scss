@@ -54,7 +54,7 @@
         &__type{
             padding: 0.625rem 1.25rem;
             font-family: "Archivo";
-            font-weight: 0.9375rem;
+            font-weight: 700;
             font-size: 0.875rem;
             line-height: 100%;
             letter-spacing: 2.8px;
@@ -122,10 +122,13 @@
             }
         }
 
-        &__book{
-            @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+        &__link{
             margin-inline: 1.25rem;
             margin-bottom: 2.5rem;
+
+            &__book{
+                @include miranda_button($width: 70%, $f_family: "Archivo", $f_weight: 700, $f_size: 0.875rem, $l_spacing: 2.8px);
+            }
         }
     }
 }
@@ -189,6 +192,10 @@
             border-top: 6px solid #BDAC8D;
             background-color: white;
 
+            &__type{
+                width: 20%;
+            }
+
             hr{
                 display: block;
                 width: 100%;
@@ -204,8 +211,12 @@
                 width: 50%;
             }
 
-            &__book{
-                max-width: 25%;
+            &__link{
+                width: 25%;
+
+                &__book{
+                    width: 100%;
+                }
             }
         }
     }

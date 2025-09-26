@@ -109,7 +109,7 @@ form{
         display: flex;
         justify-content: space-between;
         max-width: 60%;
-        margin: 0 auto;
+        margin: 7.5rem auto 1rem auto;
         height: 15rem;
 
         &__card{
@@ -144,7 +144,7 @@ form{
         flex-wrap: wrap;
         justify-content: space-between;
         width: 60%;
-        margin: 0 auto;
+        margin: 7.5rem auto;
 
         label:not([for=message]){
             width: 48%;
@@ -156,7 +156,7 @@ form{
 
         input[type=submit]{
             max-width: 15%;
-            margin: 0 auto 7.5rem auto;
+            margin: 0 auto;
         }
     }
 }
