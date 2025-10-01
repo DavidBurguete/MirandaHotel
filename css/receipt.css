@@ -550,70 +550,6 @@ a {
     padding: 1.25rem 2.5rem;
   }
 }
-.main__availability, .main__arrival {
-  padding: 2.5rem;
-}
-.main__availability form, .main__arrival form {
-  display: flex;
-  flex-direction: column;
-}
-.main__availability form p, .main__arrival form p {
-  text-align: center;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 100%;
-  letter-spacing: -0.54px;
-  color: #222222;
-}
-.main__availability form label, .main__arrival form label {
-  display: flex;
-  flex-direction: column;
-  margin-block: 1.25rem;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 100%;
-  color: #222222;
-}
-.main__availability form label input, .main__arrival form label input {
-  margin-block: 0.5rem;
-  padding: 1.5625rem 1.25rem;
-  width: 100%;
-  border: 0;
-  outline: none;
-  background-color: #F8F8F8;
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 100%;
-  color: #777777;
-}
-.main__availability form label .input_not_visible, .main__arrival form label .input_not_visible {
-  display: none;
-}
-.main__availability form label .input_background_image, .main__arrival form label .input_background_image {
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: calc(100% - 1.875rem);
-}
-.main__availability form label .input_background_image__calendar, .main__arrival form label .input_background_image__calendar {
-  background-image: url("../img/calendar.svg");
-}
-.main__availability form input[type=submit], .main__arrival form input[type=submit] {
-  width: 100%;
-  padding: 1.25rem;
-  border: none;
-  background-color: #BEAD8E;
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 100%;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: white;
-}
-
 .burger_menu {
   position: relative;
   margin: 1.25rem;
@@ -1408,375 +1344,63 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.main__arrival {
-  background-color: #222222;
-  padding: 1.25rem;
+.main__availability, .main__arrival {
+  padding: 2.5rem;
 }
-.main__arrival form label {
-  font-family: "Roboto";
-  font-size: 1rem;
-  color: white;
-}
-.main__arrival form label input {
-  padding-block: 0.875rem;
-  padding-left: 1.5rem;
-  border-bottom: 2px solid #BEAD8E;
-  background-color: transparent;
-  font-family: "Roboto";
-}
-.main__arrival form label .input_background_image {
-  background-position-x: left;
-}
-.main__arrival form label .input_background_image__calendar {
-  background-image: url("../img/calendar_dark.svg");
-}
-.main__arrival form input[type=submit] {
-  margin-bottom: 2rem;
-  width: 70%;
-}
-
-@media screen and (min-width: 1000px) {
-  .main__arrival form {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    margin: 0 auto;
-  }
-  .main__arrival form label {
-    width: 30%;
-    margin-right: 1.875rem;
-  }
-  .main__arrival form label input {
-    padding-block: 0.875rem;
-    padding-left: 1.5rem;
-    border-bottom: 2px solid #BEAD8E;
-    background-color: transparent;
-    font-family: "Roboto";
-  }
-  .main__arrival form label .input_background_image {
-    background-position-x: left;
-  }
-  .main__arrival form label .input_background_image__calendar {
-    background-image: url("../img/calendar_dark.svg");
-  }
-  .main__arrival form input[type=submit] {
-    margin-left: auto;
-    margin-block: 1.25rem;
-    width: auto;
-  }
-}
-.about {
-  margin: 3.5rem 1.25rem 0 1.25rem;
-}
-.about__text__name {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  letter-spacing: 2.8px;
-  color: #777777;
-}
-.about__text__title {
-  padding-block: 2rem;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 3.75rem;
-  letter-spacing: -1.2px;
-  color: #111111;
-}
-.about__text__description {
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: #777777;
-}
-.about__text__book {
-  margin-top: 2rem;
-  width: 70%;
-  padding: 1.25rem;
-  border: none;
-  background-color: #BEAD8E;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 100%;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: white;
-}
-.about__team, .about__luxury {
-  padding: 3rem 3.25rem;
-}
-.about__team__img, .about__luxury__img {
-  display: block;
-  width: 100%;
-}
-.about__team__card, .about__luxury__card {
+.main__availability form, .main__arrival form {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.5rem;
-  width: 100%;
 }
-.about__team__card__icon, .about__luxury__card__icon {
-  margin: 0 auto;
-  width: fit-content;
-}
-.about__team__card__title, .about__luxury__card__title {
-  padding-block: 2rem;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 1.875rem;
-  line-height: 1.875rem;
-  letter-spacing: -0.9px;
+.main__availability form p, .main__arrival form p {
   text-align: center;
-  color: #111111;
-}
-.about__team__card__description, .about__luxury__card__description {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  text-align: center;
-  color: #111111;
-}
-.about__luxury__card {
-  background-color: #111111;
-}
-.about__luxury__card__title, .about__luxury__card__description {
-  color: white;
-}
-
-@media screen and (min-width: 1000px) {
-  .about {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: 9rem auto;
-  }
-  .about__text {
-    order: 3;
-    width: 40%;
-  }
-  .about__text__name {
-    line-height: 100%;
-  }
-  .about__text__title {
-    font-size: 5rem;
-    line-height: 5.625rem;
-    letter-spacing: -2.4px;
-  }
-  .about__text__book {
-    width: 50%;
-    padding: 1.25rem;
-    border: none;
-    background-color: #BEAD8E;
-    font-family: "Archivo";
-    font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    color: white;
-  }
-  .about__team {
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding: 0;
-  }
-  .about__team__card {
-    order: 1;
-    box-shadow: 0px 8px 16px 0px rgba(34, 34, 34, 0.0196078431);
-    margin-bottom: 1.875rem;
-  }
-  .about__team__img {
-    order: 2;
-  }
-  .about__luxury {
-    order: 2;
-    position: relative;
-    width: 25%;
-    padding: 0;
-    top: 1.875rem;
-  }
-  .about__luxury__img {
-    margin-bottom: 1.875rem;
-  }
-}
-.popular_rooms {
-  position: relative;
-}
-.popular_rooms--list {
-  padding-top: 3rem;
   font-family: "Archivo";
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   line-height: 100%;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #777777;
-}
-.popular_rooms--room {
-  margin-block: 0.9375rem;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 3.75rem;
-  letter-spacing: -1.2px;
-  text-align: center;
+  letter-spacing: -0.54px;
   color: #222222;
 }
-
-@media screen and (min-width: 1000px) {
-  .popular_rooms--room {
-    margin-block: 0.9375rem;
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-size: 5rem;
-    line-height: 5rem;
-    letter-spacing: -2.4px;
-    text-align: center;
-    color: #222222;
-  }
-  .popular__wrapper {
-    display: flex;
-    margin-bottom: 7rem;
-    padding-bottom: 7rem;
-  }
-  .popular__wrapper__slide {
-    width: 50%;
-    padding: 5rem 0.5rem;
-  }
-}
-.room__card {
-  position: relative;
-  margin: 1.25rem 0;
-}
-.room__card__icons {
-  position: absolute;
-  top: -1.375rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding: 0.75rem 1.5rem;
-  width: fit-content;
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
-}
-.room__card__icons > :not(:last-child) {
-  padding-right: 1rem;
-}
-.room__card__bottom {
-  margin-inline: 1.25rem;
-  bottom: 1.25rem;
-}
-.room__card__bottom__type {
-  margin-top: 1.25rem;
-}
-.room__card__bottom span {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 1000px) {
-  .room__card__icons, .room__card__bottom {
-    opacity: 0;
-    transition: 200ms ease-in-out;
-  }
-  .swiper-slide-active .room__card__icons, .swiper-slide-active .room__card__bottom {
-    opacity: 1;
-  }
-  .room__card__bottom {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    bottom: 2rem;
-    padding: 2.375rem;
-  }
-  .room__card__bottom__type {
-    order: 1;
-    width: 50%;
-    margin: 0;
-    font-size: 2.25rem;
-    letter-spacing: -1.08px;
-    text-align: left;
-    line-height: 100%;
-  }
-  .room__card__bottom__description {
-    order: 3;
-    width: 70%;
-    padding: 0.5rem 0 0 0;
-    text-align: left;
-  }
-  .room__card__bottom__pricing {
-    order: 2;
-    width: 30%;
-    margin: 0;
-  }
-  .room__card__bottom__pricing__price {
-    width: 100%;
-    align-self: flex-end;
-    text-align: right;
-  }
-  .room__card__bottom__pricing span {
-    font-size: 2.5rem;
-  }
-  .swiper .custom-button-prev--only_navigation, .swiper .custom-button-next--only_navigation {
-    top: 25%;
-    width: 5rem;
-    height: 5rem;
-    font-size: 2.5rem;
-  }
-  .custom-button-prev--only_navigation {
-    left: 18%;
-  }
-  .custom-button-next--only_navigation {
-    right: 18%;
-  }
-}
-.place {
-  padding: 3.5rem 1.25rem;
-  background-color: #222222;
-}
-.place__name {
+.main__availability form label, .main__arrival form label {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1.25rem;
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 100%;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: #BEAD8E;
+  color: #222222;
 }
-.place__title {
-  padding-block: 2rem;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 3.75rem;
-  letter-spacing: -1.2px;
-  color: white;
-}
-.place__description {
+.main__availability form label input, .main__arrival form label input {
+  margin-block: 0.5rem;
+  padding: 1.5625rem 1.25rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #F8F8F8;
   font-family: "Archivo";
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: #C2C2C2;
+  line-height: 100%;
+  color: #777777;
 }
-.place .video {
-  margin-block: 2rem;
+.main__availability form label .input_not_visible, .main__arrival form label .input_not_visible {
+  display: none;
 }
-.place__book {
-  width: 70%;
+.main__availability form label .input_background_image, .main__arrival form label .input_background_image {
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 1.875rem);
+}
+.main__availability form label .input_background_image__calendar, .main__arrival form label .input_background_image__calendar {
+  background-image: url("../img/calendar.svg");
+}
+.main__availability form input[type=submit], .main__arrival form input[type=submit] {
+  width: 100%;
   padding: 1.25rem;
   border: none;
   background-color: #BEAD8E;
   font-family: "Archivo";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.875rem;
   line-height: 100%;
   letter-spacing: 2.8px;
@@ -1784,377 +1408,129 @@ a {
   color: white;
 }
 
-@media screen and (min-width: 1000px) {
-  .place {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 6.75rem;
-    position: relative;
-    padding: 7.5rem 20%;
-  }
-  .place__second_panel {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
-    background-color: #AD9D82;
-  }
-  .place__name {
-    grid-column: 1;
-  }
-  .place__title {
-    grid-column: 1;
-    font-size: 5rem;
-    line-height: 5.25rem;
-    letter-spacing: -2.4px;
-  }
-  .place__description {
-    grid-column: 1;
-  }
-  .place .video {
-    grid-column: 2/3;
-    grid-row: 1/5;
-    height: 100%;
-    margin: 0;
-    z-index: 1;
-  }
-  .place__book {
-    grid-column: 1;
-    margin-top: 2rem;
-    width: 70%;
-    padding: 1.25rem;
-    border: none;
-    background-color: #BEAD8E;
-    font-family: "Archivo";
-    font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 100%;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    color: white;
-  }
+.main__info {
+  margin: 3rem 1.25rem;
 }
-.features {
-  padding: 1.25rem;
-}
-.features__title {
-  margin-top: 1.75rem;
+.main__info h3 {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 100%;
   letter-spacing: 2.8px;
   text-transform: uppercase;
-  text-align: center;
   color: #777777;
 }
-.features__description {
-  margin-block: 1rem;
+.main__info p {
+  margin-block: 0.625rem;
   font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 3.75rem;
-  letter-spacing: -1.2px;
-  text-align: center;
-}
-.features__main__card {
-  position: relative;
-  padding: 4.5rem 1.125rem 3rem 1.125rem;
-}
-.features__main__card__number {
-  position: absolute;
-  top: -0.5rem;
-  right: 0.75rem;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 7.5rem;
-  line-height: 8.125rem;
-  color: rgba(34, 34, 34, 0.04);
-}
-.features__main__card__title {
-  margin-block: 1.5rem;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 1.875rem;
-  line-height: 1.875rem;
-  letter-spacing: -0.9px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -1.44px;
   color: #222222;
 }
-.features__main__card__description {
+.main__info h4 {
   font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: #777777;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6875rem;
+  color: #BEAD8E;
+}
+.main__info h4 span {
+  font-size: 0.8125rem;
+}
+.main__info img {
+  width: 100%;
 }
 
 @media screen and (min-width: 1000px) {
-  .features {
-    margin-top: 7.5rem;
-  }
-  .features__description {
-    margin-block: 2.5rem;
-    font-size: 5rem;
-    line-height: 5rem;
-    letter-spacing: -2.4px;
-  }
-  .features__main {
+  .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
     margin: 0 auto;
   }
-  .features__main__card {
+  .main__info {
+    grid-column: 1/3;
+    margin-top: 3rem;
+    padding-right: 3rem;
+  }
+  .main__info__text {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    width: 95%;
+    padding: 2rem;
+    background-color: white;
+  }
+  .main__info__text h3 {
+    grid-column: 1/4;
+  }
+  .main__info__text p {
+    grid-column: 1/4;
+  }
+  .main__info__text h4 {
+    grid-column: 4;
+  }
+  .main__info__image {
     position: relative;
-    padding: 4.5rem 1.5rem 3rem 1.5rem;
-  }
-  .features__main__card__number {
-    position: absolute;
-    top: -0.5rem;
-    right: 0.75rem;
-    font-family: "Archivo";
-    font-weight: 700;
-    font-size: 7.5rem;
-    line-height: 8.125rem;
-    color: rgba(34, 34, 34, 0.04);
-  }
-  .features__main__card__title {
-    margin-block: 1.5rem;
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-size: 1.875rem;
-    line-height: 1.875rem;
-    letter-spacing: -0.9px;
-    color: #222222;
-  }
-  .features__main__card__description {
-    font-family: "Archivo";
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-    color: #777777;
-  }
-}
-.swiper_complete .swiper-pagination-bullet, .swiper_only_pagination .swiper-pagination-bullet {
-  background: #EDEDED;
-  opacity: 1;
-}
-
-.swiper_complete .swiper-pagination-bullet-active, .swiper_only_pagination .swiper-pagination-bullet-active {
-  background: #BEAD8E;
-}
-
-.menu {
-  position: relative;
-  padding: 3.5rem 1.25rem;
-}
-.menu__icon {
-  display: none;
-}
-.menu__icon--cropped {
-  position: relative;
-  left: calc(100% - 5.5625rem + 1.25rem);
-}
-.menu__name {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 100%;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: #777777;
-}
-.menu__title {
-  padding-block: 2rem;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 3.75rem;
-  letter-spacing: -1.2px;
-  color: #222222;
-}
-.menu__card {
-  display: flex;
-  margin-block: 1rem;
-}
-.menu__card__img {
-  width: 7.5rem;
-}
-.menu__card__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 2rem;
-}
-.menu__card__text__name {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.72px;
-  color: #222222;
-}
-.menu__card__text__description {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: #222222;
-}
-
-@media screen and (min-width: 1000px) {
-  .menu {
-    width: 60%;
-    margin: 0 auto;
-  }
-  .menu__icon {
-    display: block;
-    position: relative;
-    top: 2.375rem;
-    right: 30%;
-    width: 14.25rem;
+    bottom: 4.875rem;
     z-index: -1;
   }
-  .menu__icon--cropped {
-    display: none;
-  }
-  .menu__title {
-    font-size: 5rem;
-    line-height: 100%;
-    letter-spacing: -2.4px;
-  }
-  .menu__card:hover {
-    transition: 150ms ease-in-out;
-    background-color: #222222;
-    color: white;
-  }
-  .menu__card:hover .menu__card__text__name {
-    color: white;
-    transition: 150ms ease-in-out;
-  }
-  .menu__card:hover .menu__card__text__description {
-    color: white;
-    transition: 150ms ease-in-out;
-  }
-  .menu__card__text {
-    margin: 1.25rem 2rem;
-  }
-  .menu__card__text__description {
-    width: 75%;
-  }
 }
-.menu .swiper-button-prev, .menu .swiper-button-next {
-  top: auto;
-  bottom: 0;
-  width: 2rem;
-  height: 2rem;
-  z-index: 3;
+.main__receipt {
+  margin: 1.25rem;
 }
-.menu .swiper-button-prev::after, .menu .swiper-button-next::after {
-  content: none;
+.main__receipt hr {
+  width: 100%;
+  margin-block: 1rem 1.5rem;
+  border: 1px solid #F1F1F1;
 }
-.menu .swiper-button-prev {
-  color: #111111;
-  background-color: #F8F8F8;
-  left: auto;
-  right: 4rem;
+.main__receipt__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  color: #222222;
 }
-.menu .swiper-button-next {
-  color: white;
-  background-color: #BEAD8E;
-  right: 1rem;
+.main__receipt__content {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin-block: 2.8125rem 5.625rem;
 }
-
-@media screen and (min-width: 1000px) {
-  .menu .swiper-button-prev, .menu .swiper-button-next {
-    position: absolute;
-    top: 10rem;
-    width: 4.375rem;
-    height: 4.375rem;
-    z-index: 99;
-  }
-  .menu .swiper-button-prev {
-    right: 6.5rem;
-  }
-}
-.menu_pictures .swiper-slide {
-  margin-bottom: 2rem;
-}
-.menu_pictures__images__image {
-  padding: 1.25rem;
-}
-
-@media screen and (min-width: 1000px) {
-  .menu_pictures {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 60%;
-    margin: 0 auto;
-  }
-  .menu_pictures__images {
-    justify-content: space-between;
-  }
-  .menu_pictures__images__image {
-    width: 30%;
-    padding: 0;
-  }
-}
-.info {
-  margin-block: 3rem;
-  padding: 3rem 5.125rem;
-  background-color: #222222;
-  text-align: center;
-}
-.info__card:not(:last-child) {
-  margin-bottom: 2rem;
-}
-.info__card__number {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 3.75rem;
-  line-height: 136%;
-  color: white;
-}
-.info__card__number span {
-  font-size: 1rem;
-}
-.info__card__text {
-  position: relative;
-  top: -1.75rem;
+.main__receipt__content__name {
+  grid-column: 1;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 1rem;
-  line-height: 136%;
-  color: #999999;
+  color: #222222;
+}
+.main__receipt__content__description {
+  grid-column: 2;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #777777;
+}
+.main__receipt__content__description ul {
+  list-style-type: none;
+}
+.main__receipt__content__description ul li {
+  display: flex;
+  padding-bottom: 0.25rem;
+}
+.main__receipt__content__description ul li img {
+  width: 1rem;
+  margin: 0 0.25rem 0.25rem 0;
 }
 
 @media screen and (min-width: 1000px) {
-  .info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 60%;
-    margin: 3rem auto;
-    text-align: left;
-  }
-  .info__card, .info__card:not(:last-child) {
-    max-width: 33%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  .info__card__number {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 3.75rem;
-    line-height: 136%;
-    color: white;
-  }
-  .info__card__number span {
-    font-size: 1rem;
+  .main__receipt {
+    position: relative;
+    margin: 5.375rem 0 0 0;
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=receipt.css.map */
